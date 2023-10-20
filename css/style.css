@@ -1,5 +1,13 @@
+* {
+    margin: 0;
+    font-family: Roboto;
+}
 .flex {
     display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .justify-center {
@@ -26,7 +34,4 @@
     color: #99E2D0;
 }
 
-main {
-    max-width: 768px;
-}
-
+/*# sourceMappingURL=style.css.map */
