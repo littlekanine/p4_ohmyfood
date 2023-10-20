@@ -14,6 +14,17 @@
     width: 100%;
 }
 
+.first-color {
+    color: #9356DC;
+}
+
+.second-color {
+    color: #FF79DA;
+}
+
+.third-color {
+    color: #99E2D0;
+}
 
 main {
     max-width: 768px;
