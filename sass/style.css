@@ -14,9 +14,35 @@ nav img {
 nav .header {
   height: 50px;
   background-color: #EAEAEA;
-  box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 10px 20px -5px rgba(0, 0, 0, 0.2);
 }
 nav .header i {
   display: flex;
   padding-right: 17px;
+}
+
+main div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(247, 244, 244);
+}
+main div .explorer {
+  text-align: center;
+  width: 275px;
+  font-size: 18px;
+}
+main div .explorer p {
+  padding-top: 20px;
+  font-size: 18px;
+}
+main div .explorer button {
+  margin-top: 20px;
+  border-radius: 40px;
+  width: 218px;
+  height: 50px;
+  color: white;
+  background: rgb(250, 163, 248);
+  background: linear-gradient(180deg, rgb(250, 163, 248) 0%, rgb(144, 183, 255) 100%);
+  border: 1px;
+  border-color: #9747FF;
 }/*# sourceMappingURL=style.css.map */
