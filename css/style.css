@@ -10,6 +10,10 @@
     flex-direction: column;
 }
 
+.flex-row {
+    flex-direction: row;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -32,6 +36,10 @@
 
 .third-color {
     color: #99E2D0;
+}
+
+.icone {
+    color: grey;
 }
 
 /*# sourceMappingURL=style.css.map */

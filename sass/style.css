@@ -46,4 +46,51 @@ main div .explorer button {
   border: 1px;
   border-color: #9747FF;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+main .fonctionnement {
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+main .fonctionnement .fonc-button {
+  background: transparent;
+}
+main .fonctionnement .fonc-button button {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 322.49px;
+  height: 72.38px;
+}
+main .fonctionnement .fonc-button button i {
+  padding-right: 20px;
+}
+main .restaurant {
+  margin-left: 10px;
+}
+main .restaurant h2 {
+  margin-bottom: 20px;
+}
+main .restaurant section .card-restaurant {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 346px;
+  height: 271px;
+  margin-bottom: 20px;
+}
+main .restaurant section .card-restaurant img {
+  width: 346px;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 10px;
+}
+main .restaurant section .card-restaurant h3, main .restaurant section .card-restaurant p {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
