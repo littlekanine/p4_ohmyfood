@@ -2,13 +2,18 @@ body {
     width: 375px;
 }
 header {
-    // height: 113px;
     nav {
         width: 100%;
         margin-top: 30px;
+        .arrow {
+            color: #353535;
+            size: 30px;
+            position: relative;
+            right: 70px;
+        }
         img {
-            height: 44px;
-            padding-bottom: 30px;
+            width: 162px;
+            padding-bottom: 20px;
         }
         .header {
             height: 50px;
@@ -79,6 +84,10 @@ main {
             margin-bottom: 20px;
         }
         section {
+            a{
+                color: black;
+                text-decoration: none;
+            }
             .card-restaurant {
                 background-color: white;
                 border-radius: 20px;
