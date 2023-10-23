@@ -93,4 +93,23 @@ main .restaurant section .card-restaurant img {
 main .restaurant section .card-restaurant h3, main .restaurant section .card-restaurant p {
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.back-foot {
+  background-color: #353535;
+}
+.back-foot footer h3 {
+  font-family: Shrikhand;
+  width: 137.58px;
+  height: 27px;
+  color: #FFFFFF;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.back-foot footer p {
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.back-foot footer p i {
+  padding-right: 10px;
 }/*# sourceMappingURL=style.css.map */
