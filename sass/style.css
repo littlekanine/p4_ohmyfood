@@ -1,9 +1,10 @@
 body {
   width: 375px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 header nav {
-  width: 100%;
   margin-top: 30px;
 }
 header nav .arrow {
@@ -32,7 +33,6 @@ main div {
   background-color: #F6F6F6;
 }
 main div .explorer {
-  text-align: center;
   width: 275px;
   font-size: 18px;
   font-weight: bold;
@@ -46,16 +46,15 @@ main div .explorer button {
   border-radius: 40px;
   width: 218px;
   height: 50px;
-  color: white;
+  color: #FFFFFF;
   background: #FC5C7D;
   background: linear-gradient(to bottom, #6A82FB, #FC5C7D);
   border: 1px;
-  border-color: #9747FF;
+  border-color: #9356DC;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 main .fonctionnement {
   margin-top: 40px;
-  margin-left: 10px;
   margin-bottom: 30px;
 }
 main .fonctionnement .fonc-button {
@@ -74,9 +73,6 @@ main .fonctionnement .fonc-button button {
 main .fonctionnement .fonc-button button i {
   padding-right: 20px;
 }
-main .restaurant {
-  margin-left: 10px;
-}
 main .restaurant h2 {
   margin-bottom: 20px;
 }
@@ -85,9 +81,9 @@ main .restaurant section a {
   text-decoration: none;
 }
 main .restaurant section .card-restaurant {
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   width: 346px;
   height: 271px;
   margin-bottom: 20px;
@@ -101,7 +97,6 @@ main .restaurant section .card-restaurant img {
   margin-bottom: 10px;
 }
 main .restaurant section .card-restaurant h3, main .restaurant section .card-restaurant p {
-  margin-left: 10px;
   margin-bottom: 10px;
 }
 
@@ -109,7 +104,7 @@ main .restaurant section .card-restaurant h3, main .restaurant section .card-res
   background-color: #353535;
 }
 .back-foot footer h3 {
-  font-family: Shrikhand;
+  font-family: Shrikhand, sans-serif;
   width: 137.58px;
   height: 27px;
   color: #FFFFFF;

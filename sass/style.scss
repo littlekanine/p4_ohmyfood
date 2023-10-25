@@ -1,9 +1,22 @@
+// VARIABLE
+$main-font : Roboto, sans-serif ;
+$second-font : Shrikhand, sans-serif ;
+$main-color : #9356DC;
+$white : #FFFFFF ; 
+$black: black ;
+
+// MIXIN
+@mixin box-shadow {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 body {
     width: 375px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 header {
     nav {
-        width: 100%;
         margin-top: 30px;
         .arrow {
             color: #353535;
@@ -33,7 +46,6 @@ main {
         padding-bottom: 20px;
         background-color: #F6F6F6;
         .explorer {
-            text-align: center;
             width: 275px;
             font-size: 18px;
             font-weight: bold;
@@ -46,19 +58,18 @@ main {
                 border-radius: 40px;
                 width: 218px;
                 height: 50px;
-                color: white;
+                color: $white;
                 background: #FC5C7D;
                 background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D); 
                 background: linear-gradient(to bottom, #6A82FB, #FC5C7D);
                 border: 1px;
-                border-color: #9747FF;
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+                border-color:$main-color;
+                @include box-shadow;
             }
         }
     }
     .fonctionnement {
         margin-top: 40px;
-        margin-left: 10px;
         margin-bottom: 30px;
         .fonc-button {
             background: transparent;
@@ -79,19 +90,18 @@ main {
         
     }
     .restaurant {
-        margin-left: 10px;
         h2 {
             margin-bottom: 20px;
         }
         section {
             a{
-                color: black;
+                color: $black;
                 text-decoration: none;
             }
             .card-restaurant {
-                background-color: white;
+                background-color: $white;
                 border-radius: 20px;
-                filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+                @include box-shadow;
                 width: 346px;
                 height: 271px;
                 margin-bottom: 20px;
@@ -105,7 +115,6 @@ main {
                 }
 
                 h3, p {
-                    margin-left: 10px;
                     margin-bottom: 10px;
                 }
             }
@@ -117,15 +126,15 @@ main {
     background-color: #353535 ;
     footer {
         h3 {
-            font-family: Shrikhand ;
+            font-family: $second-font ;
             width: 137.58px;
             height: 27px;
-            color: #FFFFFF;
+            color: $white;
             padding-left: 10px;
             margin-bottom: 20px;
         }
         p {
-            color: #FFFFFF;
+            color: $white;
             padding-left: 10px;
             i{
                 padding-right: 10px;
