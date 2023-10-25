@@ -1,7 +1,5 @@
 body {
   width: 375px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 header nav {
@@ -27,21 +25,21 @@ header nav .header i {
   padding-right: 17px;
 }
 
-main div {
+main .reserv {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #F6F6F6;
 }
-main div .explorer {
+main .reserv .explorer {
   width: 275px;
   font-size: 18px;
   font-weight: bold;
 }
-main div .explorer p {
+main .reserv .explorer p {
   padding-top: 20px;
   font-size: 18px;
 }
-main div .explorer button {
+main .reserv .explorer button {
   margin-top: 20px;
   border-radius: 40px;
   width: 218px;
@@ -52,13 +50,31 @@ main div .explorer button {
   border: 1px;
   border-color: #9356DC;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 400;
 }
 main .fonctionnement {
   margin-top: 40px;
   margin-bottom: 30px;
 }
+main .fonctionnement h2 {
+  margin-left: 20px;
+}
+main .fonctionnement .rond {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: relative;
+  right: 40px;
+}
+main .fonctionnement .rond p {
+  color: #FFFFFF;
+  position: relative;
+  top: 2px;
+}
 main .fonctionnement .fonc-button {
   background: transparent;
+  padding-top: 30px;
 }
 main .fonctionnement .fonc-button button {
   font-size: 16px;
@@ -73,8 +89,37 @@ main .fonctionnement .fonc-button button {
 main .fonctionnement .fonc-button button i {
   padding-right: 20px;
 }
+main .fonctionnement .fonc-button button h3 {
+  width: 211px;
+  height: 15.67px;
+  font-weight: 600;
+}
 main .restaurant h2 {
   margin-bottom: 20px;
+}
+main .restaurant section .rectangle {
+  position: relative;
+  bottom: 260px;
+  left: 250px;
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+main .restaurant section .rectangle p {
+  color: #008766;
+  size: 16px;
+  width: 61.37px;
+  padding-top: 10px;
+}
+main .restaurant section i {
+  font-size: 20px;
+  border: 1px;
+  height: 21px;
+  position: relative;
+  left: 300px;
+  bottom: 45px;
 }
 main .restaurant section a {
   color: black;
@@ -97,7 +142,8 @@ main .restaurant section .card-restaurant img {
   margin-bottom: 10px;
 }
 main .restaurant section .card-restaurant h3, main .restaurant section .card-restaurant p {
-  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-bottom: 10px;
 }
 
 .back-foot {

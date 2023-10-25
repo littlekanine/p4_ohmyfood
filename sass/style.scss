@@ -12,8 +12,6 @@ $black: black ;
 
 body {
     width: 375px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 header {
     nav {
@@ -41,7 +39,7 @@ header {
 }
 
 main { 
-    div { 
+    .reserv { 
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: #F6F6F6;
@@ -65,14 +63,32 @@ main {
                 border: 1px;
                 border-color:$main-color;
                 @include box-shadow;
+                font-weight: 400;
             }
         }
     }
     .fonctionnement {
         margin-top: 40px;
         margin-bottom: 30px;
+        h2 {
+            margin-left: 20px;
+        }
+        .rond {
+            width: 24px;
+            height: 24px;
+            background-color: $main-color;
+            border-radius: 50%;
+            position: relative;
+            right: 40px;
+            p {
+                color: $white;
+                position: relative;
+                top: 2px;
+            }
+        }
         .fonc-button {
             background: transparent;
+            padding-top: 30px;
             button {
                 font-size: 16px;
                 font-weight: 500;
@@ -85,6 +101,11 @@ main {
                 i {
                     padding-right: 20px;
                }
+                h3 {
+                    width: 211px;
+                    height: 15.67px;
+                    font-weight: 600;
+                }
             }
         }
         
@@ -94,6 +115,30 @@ main {
             margin-bottom: 20px;
         }
         section {
+            .rectangle {
+                position: relative;
+                bottom: 260px;
+                left: 250px;
+                width: 80px;
+                height: 29px;
+                background-color: #99E2D0;
+                border-radius: 2px;
+                @include box-shadow ;
+                & p{
+                    color: #008766;
+                    size: 16px;
+                    width: 61.37px;
+                    padding-top: 10px;
+                }
+            }
+            i{
+                font-size: 20px;
+                border: 1px;
+                height: 21px;
+                position: relative;
+                left: 300px;
+                bottom: 45px;
+            }
             a{
                 color: $black;
                 text-decoration: none;
@@ -115,7 +160,8 @@ main {
                 }
 
                 h3, p {
-                    margin-bottom: 10px;
+                    margin-left: 10px;
+                    padding-bottom: 10px;
                 }
             }
         }
