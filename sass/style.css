@@ -45,12 +45,16 @@ main .reserv .explorer button {
   width: 218px;
   height: 50px;
   color: #FFFFFF;
-  background: #FC5C7D;
-  background: linear-gradient(to bottom, #6A82FB, #FC5C7D);
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   border: 1px;
   border-color: #9356DC;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   font-weight: 400;
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+}
+main .reserv .explorer button:hover {
+  filter: brightness(1.07);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
 }
 main .fonctionnement {
   margin-top: 40px;
@@ -120,6 +124,11 @@ main .restaurant section i {
   position: relative;
   left: 300px;
   bottom: 45px;
+  cursor: pointer;
+  transition: transform 0.2s background-color 0.2s;
+}
+main .restaurant section i:active {
+  background-color: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
 }
 main .restaurant section a {
   color: black;
