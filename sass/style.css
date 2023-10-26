@@ -52,6 +52,10 @@ main .reserv .explorer button {
   font-weight: 400;
   transition: transform 0.7s ease, filter 0.7s ease, box-shadow 0.7s ease;
 }
+main .reserv .explorer button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 main .reserv .explorer button:hover {
   filter: brightness(1.13);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
@@ -118,19 +122,17 @@ main .restaurant section .rectangle p {
   width: 61.37px;
   padding-top: 10px;
 }
-main .restaurant section i {
-  font-size: 20px;
+main .restaurant section .icon {
+  font-size: 21px;
   border: 1px;
   height: 21px;
   position: relative;
   left: 300px;
   bottom: 45px;
-  cursor: pointer;
-  transition: transform 0.8s ease background-color 0.2s ease;
+  transition: color 0.8s ease;
 }
-main .restaurant section i:active {
-  transform: scale(1.2);
-  color: 0;
+main .restaurant section .icon:hover {
+  color: #9356DC;
 }
 main .restaurant section a {
   color: black;
