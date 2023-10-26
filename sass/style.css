@@ -50,11 +50,12 @@ main .reserv .explorer button {
   border-color: #9356DC;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   font-weight: 400;
-  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.7s ease, filter 0.7s ease, box-shadow 0.7s ease;
 }
 main .reserv .explorer button:hover {
-  filter: brightness(1.07);
+  filter: brightness(1.13);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
 }
 main .fonctionnement {
   margin-top: 40px;
@@ -125,10 +126,11 @@ main .restaurant section i {
   left: 300px;
   bottom: 45px;
   cursor: pointer;
-  transition: transform 0.2s background-color 0.2s;
+  transition: transform 0.8s ease background-color 0.2s ease;
 }
 main .restaurant section i:active {
-  background-color: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  transform: scale(1.2);
+  color: 0;
 }
 main .restaurant section a {
   color: black;
