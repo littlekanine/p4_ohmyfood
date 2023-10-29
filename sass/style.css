@@ -247,8 +247,17 @@ main .restaurant section .card-restaurant h3, main .restaurant section .card-res
 
 .back-foot {
   background-color: #353535;
+  padding-top: 50px;
 }
-.back-foot footer h3 {
+.back-foot footer {
+  flex-direction: column;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .back-foot footer {
+    flex-direction: row-reverse;
+  }
+}
+.back-foot h3 {
   font-family: Shrikhand, sans-serif;
   width: 137.58px;
   height: 27px;
@@ -256,13 +265,25 @@ main .restaurant section .card-restaurant h3, main .restaurant section .card-res
   padding-left: 10px;
   margin-bottom: 20px;
 }
-.back-foot footer p {
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .back-foot h3 {
+    margin-left: 100px;
+  }
+}
+.back-foot p {
   color: #FFFFFF;
   padding-left: 10px;
 }
-.back-foot footer p .fa-utensils {
+.back-foot p .fa-utensils {
   padding-right: 15px;
 }
-.back-foot footer p .fa-handshake-angle {
+.back-foot p .fa-handshake-angle {
   padding-right: 10px;
+}
+.back-foot p .foot-media_1 {
+  flex-direction: column;
+}
+.back-foot p .foot-media_2 {
+  flex-direction: column;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

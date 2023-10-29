@@ -182,7 +182,7 @@ main {
                     bottom: 260px;
                     left: 400px;
                 }
-                & p{
+                 p{
                     color: #008766;
                     size: 16px;
                     width: 61.37px;
@@ -277,7 +277,13 @@ main {
 
 .back-foot {
     background-color: #353535 ;
+    padding-top: 50px;
     footer {
+        flex-direction: column;
+        @include tablette{
+            flex-direction: row-reverse;
+        }
+        }
         h3 {
             font-family: $second-font ;
             width: 137.58px;
@@ -286,16 +292,12 @@ main {
             padding-left: 10px;
             margin-bottom: 20px;
             @include tablette {
-                flex-direction: ;
+                margin-left: 100px;
             }
         }
         p {
             color: $white;
-            padding-left: 10px;
-            @include tablette {
-                flex-direction: row;
-            }
-
+            padding-left: 10px; 
             .fa-utensils {
                 padding-right: 15px;
             }
@@ -303,6 +305,15 @@ main {
             .fa-handshake-angle {
                 padding-right: 10px;
             }
+
+            .foot-media_1 {
+                flex-direction: column;
+                
+            }
+
+            .foot-media_2 {
+                flex-direction: column;
+                font-weight: 400;
+            }
         }
     }
-}
