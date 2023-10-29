@@ -1,6 +1,16 @@
 body {
   width: 375px;
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
 
 header nav {
   margin-top: 30px;
@@ -68,6 +78,11 @@ main .fonctionnement {
 main .fonctionnement h2 {
   margin-left: 20px;
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  main .fonctionnement h2 {
+    margin-left: 125px;
+  }
+}
 main .fonctionnement .rond {
   width: 24px;
   height: 24px;
@@ -84,6 +99,12 @@ main .fonctionnement .rond p {
 main .fonctionnement .fonc-button {
   background: transparent;
   padding-top: 30px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  main .fonctionnement .fonc-button {
+    flex-direction: row;
+    gap: 25px;
+  }
 }
 main .fonctionnement .fonc-button button {
   font-size: 16px;
@@ -103,6 +124,18 @@ main .fonctionnement .fonc-button button h3 {
   height: 15.67px;
   font-weight: 600;
 }
+main .restaurant {
+  background-color: #F6F6F6;
+  padding-top: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  main .restaurant .card-tablette {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding-bottom: 20px;
+  }
+}
 main .restaurant h2 {
   margin-bottom: 20px;
 }
@@ -115,6 +148,13 @@ main .restaurant section .rectangle {
   background-color: #99E2D0;
   border-radius: 2px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  main .restaurant section .rectangle {
+    position: relative;
+    bottom: 260px;
+    left: 400px;
+  }
 }
 main .restaurant section .rectangle p {
   color: #008766;
@@ -130,6 +170,12 @@ main .restaurant section .icon {
   left: 300px;
   bottom: 45px;
   transition: color 0.8s ease;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  main .restaurant section .icon {
+    position: relative;
+    left: 450px;
+  }
 }
 main .restaurant section .icon::before {
   position: absolute;
@@ -176,6 +222,11 @@ main .restaurant section .card-restaurant {
   height: 271px;
   margin-bottom: 20px;
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  main .restaurant section .card-restaurant {
+    width: 498.65px;
+  }
+}
 main .restaurant section .card-restaurant img {
   width: 346px;
   height: 190px;
@@ -183,6 +234,11 @@ main .restaurant section .card-restaurant img {
      object-fit: cover;
   border-radius: 20px 20px 0px 0px;
   margin-bottom: 10px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  main .restaurant section .card-restaurant img {
+    width: 498.65px;
+  }
 }
 main .restaurant section .card-restaurant h3, main .restaurant section .card-restaurant p {
   margin-left: 10px;

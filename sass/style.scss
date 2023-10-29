@@ -5,15 +5,41 @@ $main-color : #9356DC;
 $white : #FFFFFF ; 
 $black: black ;
 $gradient : linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$desktop-width : 1440px;
+$tablette-width : 1024px;
+$mobile-width : 768px; 
 
 // MIXIN
 @mixin box-shadow {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+@mixin desktop  {
+    @media (min-width : $desktop-width ) {
+        @content;
+    }
+}
+
+@mixin tablette {
+    @media (min-width : $tablette-width) and (max-width : $desktop-width) {
+        @content;
+    } 
+}
+
+@mixin mobile {
+    @media (max-width : $tablette-width) {
+        @content;
+    } 
+}
 
 body {
     width: 375px;
+    @include tablette {
+        width: 100%;
+    }
+    @include desktop {
+        width: 100% ;
+    }
 }
 header {
     nav {
@@ -82,6 +108,9 @@ main {
         margin-bottom: 30px;
         h2 {
             margin-left: 20px;
+            @include tablette {
+                margin-left: 125px ;
+            }
         }
         .rond {
             width: 24px;
@@ -99,6 +128,10 @@ main {
         .fonc-button {
             background: transparent;
             padding-top: 30px;
+            @include tablette {
+                flex-direction: row;
+                gap: 25px;
+            }
             button {
                 font-size: 16px;
                 font-weight: 500;
@@ -121,6 +154,16 @@ main {
         
     }
     .restaurant {
+        @include tablette {
+            .card-tablette {
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+            padding-bottom: 20px;
+        }
+    }
+        background-color:#F6F6F6;
+        padding-top: 20px ;
         h2 {
             margin-bottom: 20px;
         }
@@ -133,7 +176,12 @@ main {
                 height: 29px;
                 background-color: #99E2D0;
                 border-radius: 2px;
-                @include box-shadow ;
+                @include box-shadow;
+                @include tablette{
+                    position: relative;
+                    bottom: 260px;
+                    left: 400px;
+                }
                 & p{
                     color: #008766;
                     size: 16px;
@@ -149,6 +197,10 @@ main {
                 left: 300px;
                 bottom: 45px;
                 transition: color 0.8s ease ;
+                @include tablette {
+                    position: relative;
+                    left: 450px;
+                }
             }
                 .icon::before {
                     position: absolute;
@@ -199,6 +251,9 @@ main {
                 width: 346px;
                 height: 271px;
                 margin-bottom: 20px;
+                @include tablette {
+                    width: 498.65px;
+                }
         
                 img {
                     width: 346px;
@@ -206,6 +261,9 @@ main {
                     object-fit: cover;
                     border-radius: 20px 20px 0px 0px;
                     margin-bottom: 10px;
+                    @include tablette {
+                        width: 498.65px;
+                    }
                 }
 
                 h3, p {
