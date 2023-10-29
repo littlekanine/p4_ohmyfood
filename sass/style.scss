@@ -285,10 +285,16 @@ main {
             color: $white;
             padding-left: 10px;
             margin-bottom: 20px;
+            @include tablette {
+                flex-direction: ;
+            }
         }
         p {
             color: $white;
             padding-left: 10px;
+            @include tablette {
+                flex-direction: row;
+            }
 
             .fa-utensils {
                 padding-right: 15px;
