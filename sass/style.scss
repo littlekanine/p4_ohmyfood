@@ -1,3 +1,6 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Shrikhand&display=swap");
+
 // VARIABLE
 $main-font : Roboto, sans-serif ;
 $second-font : Shrikhand, sans-serif ;
@@ -149,9 +152,44 @@ main {
                 left: 300px;
                 bottom: 45px;
                 transition: color 0.8s ease ;
-            &:hover, {
-                    color: $main-color;
+            }
+                .icon::before {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    font-size: inherit;
+                    top: 0;
+                    left: 0;
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 300;
+                    
                 }
+
+                .icon[aria-checked]::before {
+                    opacity: 0;
+                  }
+                  
+                  .icon::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(-50%, -50%);
+                    font-size: inherit;
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    content: "\f004";
+                    color: #9356DC;
+                    opacity: 0;
+                    transition: 300ms opacity;
+                  }
+                  
+                  .icon:hover::after,
+                  .icon[aria-checked]::after {
+                    opacity: 1;
+                  }
+                  
+                  .icon[aria-checked]:hover::after {
+                    content: "\f7a9";
+                    filter: contrast(0.7);
             }
             a{
                 color: $black;
