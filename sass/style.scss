@@ -277,7 +277,9 @@ main {
 
 .back-foot {
     background-color: #353535 ;
-    padding-top: 50px;
+    @include tablette {
+        padding-top: 50px;
+    }
     footer {
         flex-direction: column;
         @include tablette{
@@ -295,9 +297,15 @@ main {
                 margin-left: 100px;
             }
         }
+        .foot-media {
+            flex-direction: column;
+            @include tablette {
+                // flex-direction: row-reverse;
+            }
         p {
             color: $white;
             padding-left: 10px; 
+
             .fa-utensils {
                 padding-right: 15px;
             }
@@ -308,7 +316,9 @@ main {
 
             .foot-media_1 {
                 flex-direction: column;
-                
+                @include tablette {
+                    flex-direction: row;
+                }
             }
 
             .foot-media_2 {
@@ -317,3 +327,4 @@ main {
             }
         }
     }
+}
