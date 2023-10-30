@@ -27,43 +27,35 @@ $mobile-width : 768px;
 }
 
 @mixin mobile {
-    @media (max-width : $tablette-width) {
+    @media (max-width : $mobile-width) {
         @content;
     } 
 }
 
 body {
     width: 375px;
-    @include tablette {
-        width: 100%;
-    }
     @include desktop {
         width: 100% ;
     }
 }
 
 header {
+    width: 375%;
     nav {
-        margin-top: 30px;
-        .arrow {
-            color: #353535;
-            size: 30px;
-            position: relative;
-            right: 70px;
-        }
-        img {
-            width: 375px;
-            height: 275px;
-            padding-bottom: 20px;
-        }
         .header {
-            height: 50px;
-            background-color: #EAEAEA;
-            box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.2);
-            i { 
-                display: flex;
-                padding-right: 17px;
+            width: 375px;
+            a {
+                text-decoration: none;
+                position: relative;
+                bottom : 25px;
+            }
+            img {
+                width: 162px;
             }
         }
     }
 }
+
+
+
+        

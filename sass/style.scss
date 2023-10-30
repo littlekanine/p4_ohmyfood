@@ -27,21 +27,26 @@ $mobile-width : 768px;
 }
 
 @mixin mobile {
-    @media (max-width : $tablette-width) {
+    @media (max-width : $mobile-width) {
         @content;
     } 
 }
 
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     width: 375px;
-    @include tablette {
-        width: 100%;
-    }
     @include desktop {
-        width: 100% ;
+        width:100%;
     }
 }
 header {
+    @include desktop {
+        width: 100%;
+    }
     nav {
         margin-top: 30px;
         .arrow {
@@ -67,6 +72,9 @@ header {
 }
 
 main { 
+    @include desktop {
+        width: 100%;
+    }
     .reserv { 
         padding-top: 20px;
         padding-bottom: 20px;
@@ -108,8 +116,8 @@ main {
         margin-bottom: 30px;
         h2 {
             margin-left: 20px;
-            @include tablette {
-                margin-left: 125px ;
+            @include desktop {
+                margin-left: 230px ;
             }
         }
         .rond {
@@ -128,7 +136,7 @@ main {
         .fonc-button {
             background: transparent;
             padding-top: 30px;
-            @include tablette {
+            @include desktop {
                 flex-direction: row;
                 gap: 25px;
             }
@@ -154,7 +162,7 @@ main {
         
     }
     .restaurant {
-        @include tablette {
+        @include desktop {
             .card-tablette {
             display: flex;
             flex-direction: row;
@@ -177,7 +185,7 @@ main {
                 background-color: #99E2D0;
                 border-radius: 2px;
                 @include box-shadow;
-                @include tablette{
+                @include desktop {
                     position: relative;
                     bottom: 260px;
                     left: 400px;
@@ -197,7 +205,7 @@ main {
                 left: 300px;
                 bottom: 45px;
                 transition: color 0.8s ease ;
-                @include tablette {
+                @include desktop {
                     position: relative;
                     left: 450px;
                 }
@@ -251,7 +259,7 @@ main {
                 width: 346px;
                 height: 271px;
                 margin-bottom: 20px;
-                @include tablette {
+                @include desktop {
                     width: 498.65px;
                 }
         
@@ -261,7 +269,7 @@ main {
                     object-fit: cover;
                     border-radius: 20px 20px 0px 0px;
                     margin-bottom: 10px;
-                    @include tablette {
+                    @include desktop {
                         width: 498.65px;
                     }
                 }
@@ -277,14 +285,14 @@ main {
 
 .back-foot {
     background-color: #353535 ;
-    @include tablette {
+    @include desktop {
         padding-top: 50px;
     }
     footer {
         flex-direction: column;
-        @include tablette{
+        @include desktop {
             flex-direction: row-reverse;
-        }
+            }
         }
         h3 {
             font-family: $second-font ;
@@ -293,15 +301,35 @@ main {
             color: $white;
             padding-left: 10px;
             margin-bottom: 20px;
-            @include tablette {
+            @include desktop {
                 margin-left: 100px;
             }
         }
         .foot-media {
             flex-direction: column;
-            @include tablette {
-                // flex-direction: row-reverse;
+            @include desktop {
+                flex-direction: row;
             }
+
+// CHANGER LA TAILLE DU GRAS ?
+
+        .foot-media_1 {
+            flex-direction: column;
+            font-weight: 500;
+            @include desktop {
+                flex-direction: row;
+                padding-right: 60px;
+            }
+        }
+
+            .foot-media_2 {
+                flex-direction: column;
+                font-weight: 400;
+                @include desktop {
+                    flex-direction: row;
+                    }
+                }
+
         p {
             color: $white;
             padding-left: 10px; 
@@ -312,18 +340,6 @@ main {
 
             .fa-handshake-angle {
                 padding-right: 10px;
-            }
-
-            .foot-media_1 {
-                flex-direction: column;
-                @include tablette {
-                    flex-direction: row;
-                }
-            }
-
-            .foot-media_2 {
-                flex-direction: column;
-                font-weight: 400;
             }
         }
     }
