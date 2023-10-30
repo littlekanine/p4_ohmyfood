@@ -1,23 +1,79 @@
 body {
   width: 375px;
 }
-@media (min-width: 1440px) {
-  body {
-    width: 100%;
-  }
-}
 
 header {
-  width: 375%;
+  width: 375px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 header nav .header {
-  width: 375px;
+  width: 100%;
 }
-header nav .header a {
-  text-decoration: none;
+header nav .header i {
   position: relative;
-  bottom: 25px;
+  top: 5px;
+  right: 60px;
+  text-decoration: none;
+  color: black;
 }
 header nav .header img {
   width: 162px;
+}
+
+main img {
+  width: 375px;
+  height: 275px;
+}
+main .menu {
+  background-color: #F6F6F6;
+  padding-top: 20px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  bottom: 30px;
+}
+main .menu .nav_menu h2 {
+  font-family: Shrikhand, sans-serif;
+}
+main .menu .nav_menu .icon {
+  font-size: 21px;
+  position: relative;
+  bottom: 20px;
+  left: 350px;
+  border: 1px;
+  height: 21px;
+  transition: color 0.8s ease;
+}
+main .menu .nav_menu .icon::before {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 300;
+}
+main .menu .nav_menu .icon[aria-checked]::before {
+  opacity: 0;
+}
+main .menu .nav_menu .icon::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f004";
+  color: #9356DC;
+  opacity: 0;
+  transition: 300ms opacity;
+}
+main .menu .nav_menu .icon:hover::after,
+main .menu .nav_menu .icon[aria-checked]::after {
+  opacity: 1;
+}
+main .menu .nav_menu .icon[aria-checked]:hover::after {
+  content: "\f7a9";
+  filter: contrast(0.7);
 }/*# sourceMappingURL=restaurant.css.map */

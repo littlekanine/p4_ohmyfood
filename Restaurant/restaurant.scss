@@ -34,28 +34,95 @@ $mobile-width : 768px;
 
 body {
     width: 375px;
-    @include desktop {
-        width: 100% ;
-    }
 }
 
-header {
-    width: 375%;
-    nav {
-        .header {
-            width: 375px;
-            a {
-                text-decoration: none;
-                position: relative;
-                bottom : 25px;
+    header {
+        width: 375px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        nav {
+            .header {
+                width: 100%;
+                i {
+                    position: relative;
+                    top: 5px;
+                    right: 60px;
+                    text-decoration: none;
+                    color: $black;
+                }
+                img {
+                    width: 162px;
+                }
             }
-            img {
-                width: 162px;
+        }
+    }
+
+main {
+    img {
+        width: 375px;
+        height: 275px;
+    }
+    .menu {
+        background-color: #F6F6F6;
+        padding-top:20px;
+        border-radius: 20px 20px 0px 0px;
+        position: relative;
+        bottom: 30px;
+        .nav_menu {
+            h2 {
+                font-family: $second-font;
+            }
+            .icon{
+                font-size: 21px;
+                position: relative;
+                bottom: 20px;
+                left: 350px;
+                border: 1px;
+                height: 21px;
+                transition: color 0.8s ease ;
+            }
+                .icon::before {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    font-size: inherit;
+                    top: 0;
+                    left: 0;
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 300;
+                    
+                }
+
+                .icon[aria-checked]::before {
+                    opacity: 0;
+                }
+                
+                .icon::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(-50%, -50%);
+                    font-size: inherit;
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    content: "\f004";
+                    color:$main-color;
+                    opacity: 0;
+                    transition: 300ms opacity;
+                }
+                
+                .icon:hover::after,
+                .icon[aria-checked]::after {
+                    opacity: 1;
+                }
+                
+                .icon[aria-checked]:hover::after {
+                    content: "\f7a9";
+                    filter: contrast(0.7);
+            }
+            h3 {
             }
         }
     }
 }
-
-
 
         
