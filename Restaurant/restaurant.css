@@ -1,9 +1,13 @@
+* {
+  margin: 0;
+}
+
 body {
   width: 375px;
 }
 
 header {
-  width: 375px;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -149,7 +153,7 @@ main button:hover {
 .back-foot {
   background-color: #353535;
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .back-foot {
     padding-top: 50px;
   }
@@ -157,7 +161,7 @@ main button:hover {
 .back-foot footer {
   flex-direction: column;
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .back-foot footer {
     flex-direction: row-reverse;
   }
@@ -170,7 +174,7 @@ main button:hover {
   padding-left: 10px;
   margin-bottom: 20px;
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .back-foot h3 {
     margin-left: 100px;
   }
@@ -178,7 +182,7 @@ main button:hover {
 .back-foot .foot-media {
   flex-direction: column;
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .back-foot .foot-media {
     flex-direction: row;
   }
@@ -187,7 +191,7 @@ main button:hover {
   flex-direction: column;
   font-weight: 500;
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .back-foot .foot-media .foot-media_1 {
     flex-direction: row;
     padding-right: 60px;
@@ -197,7 +201,7 @@ main button:hover {
   flex-direction: column;
   font-weight: 400;
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .back-foot .foot-media .foot-media_2 {
     flex-direction: row;
   }
