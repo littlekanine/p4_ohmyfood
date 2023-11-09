@@ -38,6 +38,9 @@ $mobile-width : 768px;
 
 body {
     width: 375px;
+    @include desktop{
+        width: 1440px;
+    }
 }
 
     header {

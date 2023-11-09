@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+}
+
+body {
+  width: 375px;
+}
+@media (max-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+}
+
+header {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header nav .header {
+  width: 100%;
+}
+header nav .header i {
+  position: relative;
+  top: 5px;
+  right: 70px;
+  width: 17.2px;
+  height: 16px;
+  text-decoration: none;
+  color: #353535;
+}
+header nav .header img {
+  width: 162px;
+}
+
+main img {
+  width: 375px;
+  height: 275px;
+}
+main .menu {
+  background-color: #F6F6F6;
+  padding-top: 20px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  bottom: 30px;
+}
+main .menu .nav_menu {
+  margin-left: 15px;
+}
+main .menu .nav_menu h2 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 28px;
+}
+main .menu .nav_menu .icon {
+  font-size: 21px;
+  position: relative;
+  bottom: 20px;
+  left: 330px;
+  border: 1px;
+  height: 21px;
+  transition: color 0.8s ease;
+}
+main .menu .nav_menu .icon::before {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 300;
+}
+main .menu .nav_menu .icon[aria-checked]::before {
+  opacity: 0;
+}
+main .menu .nav_menu .icon::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f004";
+  color: #9356DC;
+  opacity: 0;
+  transition: 300ms opacity;
+}
+main .menu .nav_menu .icon:hover::after,
+main .menu .nav_menu .icon[aria-checked]::after {
+  opacity: 1;
+}
+main .menu .nav_menu .icon[aria-checked]:hover::after {
+  content: "\f7a9";
+  filter: contrast(0.7);
+}
+main .menu .titre {
+  margin-left: 15px;
+  text-transform: uppercase;
+  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+main .menu .section {
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+main .menu .section .card-restaurant {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 349px;
+  height: 69px;
+  margin-bottom: 12px;
+}
+main .menu .section h3, main .menu .section p {
+  width: 287px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+main .menu .section h3 {
+  font-size: 18px;
+}
+main .menu .section p {
+  font-size: 15.04px;
+  width: 287px;
+  font-weight: 300;
+}
+main .menu .section h4 {
+  position: relative;
+  width: 27px;
+  height: 18px;
+  bottom: 20px;
+  left: 300px;
+}
+main button {
+  margin-bottom: 40px;
+  border-radius: 40px;
+  width: 218px;
+  height: 50px;
+  color: #FFFFFF;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  border: 1px;
+  border-color: #9356DC;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  transition: transform 0.7s ease, filter 0.7s ease, box-shadow 0.7s ease;
+}
+main button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+main button:hover {
+  filter: brightness(1.13);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+
+.back-foot {
+  background-color: #353535;
+}
+@media (max-width: 1440px) {
+  .back-foot {
+    padding-top: 50px;
+  }
+}
+.back-foot footer {
+  flex-direction: column;
+}
+@media (max-width: 1440px) {
+  .back-foot footer {
+    flex-direction: row-reverse;
+  }
+}
+.back-foot h3 {
+  font-family: Shrikhand, sans-serif;
+  width: 137.58px;
+  height: 27px;
+  color: #FFFFFF;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1440px) {
+  .back-foot h3 {
+    margin-left: 100px;
+  }
+}
+.back-foot .foot-media {
+  flex-direction: column;
+}
+@media (max-width: 1440px) {
+  .back-foot .foot-media {
+    flex-direction: row;
+  }
+}
+.back-foot .foot-media .foot-media_1 {
+  flex-direction: column;
+  font-weight: 500;
+}
+@media (max-width: 1440px) {
+  .back-foot .foot-media .foot-media_1 {
+    flex-direction: row;
+    padding-right: 60px;
+  }
+}
+.back-foot .foot-media .foot-media_2 {
+  flex-direction: column;
+  font-weight: 400;
+}
+@media (max-width: 1440px) {
+  .back-foot .foot-media .foot-media_2 {
+    flex-direction: row;
+  }
+}
+.back-foot .foot-media p {
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.back-foot .foot-media p .fa-utensils {
+  padding-right: 15px;
+}
+.back-foot .foot-media p .fa-handshake-angle {
+  padding-right: 10px;
+}

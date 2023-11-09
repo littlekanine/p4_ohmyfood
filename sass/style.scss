@@ -40,12 +40,12 @@ $mobile-width : 768px;
 body {
     width: 375px;
     @include desktop {
-        width:100%;
+        width:1440px;
     }
 }
 header {
     @include desktop {
-        width: 100%;
+        width: 1440px;
     }
     nav {
         margin-top: 30px;

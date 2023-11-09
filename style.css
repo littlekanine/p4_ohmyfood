@@ -1,0 +1,317 @@
+body {
+  width: 375px;
+}
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    width: 1440px;
+  }
+}
+header nav {
+  margin-top: 30px;
+}
+header nav .arrow {
+  color: #353535;
+  size: 30px;
+  position: relative;
+  right: 70px;
+}
+header nav img {
+  width: 162px;
+  padding-bottom: 20px;
+}
+header nav .header {
+  height: 50px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+header nav .header i {
+  display: flex;
+  padding-right: 17px;
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 100%;
+  }
+}
+main .reserv {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F6F6F6;
+}
+main .reserv .explorer {
+  width: 275px;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .reserv .explorer p {
+  padding-top: 20px;
+  font-size: 18px;
+}
+main .reserv .explorer button {
+  margin-top: 20px;
+  border-radius: 40px;
+  width: 218px;
+  height: 50px;
+  color: #FFFFFF;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  border: 1px;
+  border-color: #9356DC;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  transition: transform 0.7s ease, filter 0.7s ease, box-shadow 0.7s ease;
+}
+main .reserv .explorer button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+main .reserv .explorer button:hover {
+  filter: brightness(1.13);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+main .fonctionnement {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+main .fonctionnement h2 {
+  margin-left: 20px;
+}
+@media (min-width: 1440px) {
+  main .fonctionnement h2 {
+    margin-left: 230px;
+  }
+}
+main .fonctionnement .rond {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: relative;
+  right: 40px;
+}
+main .fonctionnement .rond p {
+  color: #FFFFFF;
+  position: relative;
+  top: 2px;
+}
+main .fonctionnement .fonc-button {
+  background: transparent;
+  padding-top: 30px;
+}
+@media (min-width: 1440px) {
+  main .fonctionnement .fonc-button {
+    flex-direction: row;
+    gap: 25px;
+  }
+}
+main .fonctionnement .fonc-button button {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 322.49px;
+  height: 72.38px;
+}
+main .fonctionnement .fonc-button button i {
+  padding-right: 20px;
+}
+main .fonctionnement .fonc-button button h3 {
+  width: 211px;
+  height: 15.67px;
+  font-weight: 600;
+}
+main .restaurant {
+  background-color: #F6F6F6;
+  padding-top: 20px;
+}
+@media (min-width: 1440px) {
+  main .restaurant .card-tablette {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding-bottom: 20px;
+  }
+}
+main .restaurant h2 {
+  margin-bottom: 20px;
+}
+main .restaurant section .rectangle {
+  position: relative;
+  bottom: 260px;
+  left: 250px;
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1440px) {
+  main .restaurant section .rectangle {
+    position: relative;
+    bottom: 260px;
+    left: 400px;
+  }
+}
+main .restaurant section .rectangle p {
+  color: #008766;
+  size: 16px;
+  width: 61.37px;
+  padding-top: 10px;
+}
+main .restaurant section .icon {
+  font-size: 21px;
+  border: 1px;
+  height: 21px;
+  position: relative;
+  left: 300px;
+  bottom: 45px;
+  transition: color 0.8s ease;
+}
+@media (min-width: 1440px) {
+  main .restaurant section .icon {
+    position: relative;
+    left: 450px;
+  }
+}
+main .restaurant section .icon::before {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 300;
+}
+main .restaurant section .icon[aria-checked]::before {
+  opacity: 0;
+}
+main .restaurant section .icon::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f004";
+  color: #9356DC;
+  opacity: 0;
+  transition: 300ms opacity;
+}
+main .restaurant section .icon:hover::after,
+main .restaurant section .icon[aria-checked]::after {
+  opacity: 1;
+}
+main .restaurant section .icon[aria-checked]:hover::after {
+  content: "\f7a9";
+  filter: contrast(0.7);
+}
+main .restaurant section a {
+  color: black;
+  text-decoration: none;
+}
+main .restaurant section .card-restaurant {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 346px;
+  height: 271px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1440px) {
+  main .restaurant section .card-restaurant {
+    width: 498.65px;
+  }
+}
+main .restaurant section .card-restaurant img {
+  width: 346px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1440px) {
+  main .restaurant section .card-restaurant img {
+    width: 498.65px;
+  }
+}
+main .restaurant section .card-restaurant h3, main .restaurant section .card-restaurant p {
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.back-foot {
+  background-color: #353535;
+}
+@media (min-width: 1440px) {
+  .back-foot {
+    padding-top: 50px;
+  }
+}
+.back-foot footer {
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .back-foot footer {
+    flex-direction: row-reverse;
+  }
+}
+.back-foot h3 {
+  font-family: Shrikhand, sans-serif;
+  width: 137.58px;
+  height: 27px;
+  color: #FFFFFF;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1440px) {
+  .back-foot h3 {
+    margin-left: 100px;
+  }
+}
+.back-foot .foot-media {
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .back-foot .foot-media {
+    flex-direction: row;
+  }
+}
+.back-foot .foot-media .foot-media_1 {
+  flex-direction: column;
+  font-weight: 500;
+}
+@media (min-width: 1440px) {
+  .back-foot .foot-media .foot-media_1 {
+    flex-direction: row;
+    padding-right: 60px;
+  }
+}
+.back-foot .foot-media .foot-media_2 {
+  flex-direction: column;
+  font-weight: 400;
+}
+@media (min-width: 1440px) {
+  .back-foot .foot-media .foot-media_2 {
+    flex-direction: row;
+  }
+}
+.back-foot .foot-media p {
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.back-foot .foot-media p .fa-utensils {
+  padding-right: 15px;
+}
+.back-foot .foot-media p .fa-handshake-angle {
+  padding-right: 10px;
+}
