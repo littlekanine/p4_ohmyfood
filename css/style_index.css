@@ -1,5 +1,5 @@
 body {
-  width: 375px;
+  width: 100%;
 }
 @media (min-width: 1440px) {
   body {
@@ -7,6 +7,9 @@ body {
   }
 }
 
+header {
+  width: 100%;
+}
 @media (min-width: 1440px) {
   header {
     width: 100%;
@@ -46,7 +49,6 @@ main .reserv {
   background-color: #F6F6F6;
 }
 main .reserv .explorer {
-  width: 275px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -235,8 +237,7 @@ main .restaurant section .card-restaurant {
 main .restaurant section .card-restaurant img {
   width: 346px;
   height: 190px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
   margin-bottom: 10px;
 }
@@ -315,4 +316,4 @@ main .restaurant section .card-restaurant h3, main .restaurant section .card-res
 }
 .back-foot .foot-media p .fa-handshake-angle {
   padding-right: 10px;
-}/*# sourceMappingURL=style.css.map */
+}

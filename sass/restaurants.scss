@@ -15,7 +15,7 @@ $mobile-width : 768px;
 }
 
 @mixin desktop  {
-    @media (max-width : $desktop-width ) {
+    @media (min-width : $desktop-width ) {
         @content;
     }
 }
@@ -27,7 +27,7 @@ $mobile-width : 768px;
 // }
 
 @mixin mobile {
-    @media (max-width : $tablette-width) {
+    @media (max-width : $mobile-width) {
         @content;
     } 
 }
@@ -39,7 +39,7 @@ $mobile-width : 768px;
 body {
     width: 100%;
     @include desktop{
-        width: 1440px;
+        width: 100%;
     }
 }
 
@@ -47,6 +47,9 @@ body {
         width: 100%;
         padding-top: 20px;
         padding-bottom: 20px;
+        @include desktop {
+            width: 1440px;
+        }
         nav {
             .header {
                 width: 100%;
