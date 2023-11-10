@@ -155,14 +155,18 @@ main {
                 width: 349px;
                 height: 69px;
                 margin-bottom: 12px;
+                cursor: pointer;
                 .check {
-                    // display: none;
-                    width: 100px;
+                    position: absolute;
+                    opacity: 0;
+                    right: 100%;
+                    width: 50px;
                     height: 69px;
                     border-radius: 0 0 20px 20px;
                     background-color: green;
+                    transition: left 1s, opacity 1s;
                     &:hover {
-                        transform: translateX(-30px);
+                        transform: translateX(-200%)
                     }
                 }
             }

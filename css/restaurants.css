@@ -119,15 +119,20 @@ main .menu .section .card-restaurant {
   width: 349px;
   height: 69px;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 main .menu .section .card-restaurant .check {
-  width: 100px;
+  position: absolute;
+  opacity: 0;
+  right: 100%;
+  width: 50px;
   height: 69px;
   border-radius: 0 0 20px 20px;
   background-color: green;
+  transition: left 1s, opacity 1s;
 }
 main .menu .section .card-restaurant .check:hover {
-  transform: translateX(-30px);
+  transform: translateX(-200%);
 }
 main .menu .section h3, main .menu .section p {
   width: 287px;
