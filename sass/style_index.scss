@@ -44,8 +44,9 @@ body {
     }
 }
 header {
+    width: 100%;
     @include desktop {
-        width: 1440px;
+        width: 100%;
     }
     nav {
         margin-top: 30px;
