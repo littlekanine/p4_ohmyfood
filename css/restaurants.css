@@ -122,16 +122,20 @@ main .menu .section .card-restaurant {
   margin-bottom: 12px;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
 }
 main .menu .section .card-restaurant .check, main .menu .section .card-restaurant .prix {
   transition: transform 0.5s ease-in-out;
 }
 main .menu .section .card-restaurant:hover .check {
   visibility: visible;
-  transform: translateX(-40px);
+  transform: translateX(-100%);
 }
 main .menu .section .card-restaurant:hover .prix {
   transform: translateX(-40px);
+}
+main .menu .section .card-restaurant:hover .overfl {
+  text-overflow: ellipsis;
 }
 main .menu .section .card-restaurant .check {
   position: absolute;
@@ -154,7 +158,7 @@ main .menu .section .card-restaurant .check i {
 }
 main .menu .section .card-restaurant .text-card {
   overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main .menu .section .card-restaurant .text-card h3, main .menu .section .card-restaurant .text-card p {
   width: 287px;

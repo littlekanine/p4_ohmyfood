@@ -158,15 +158,19 @@ main {
                 margin-bottom: 12px;
                 overflow: hidden;
                 cursor: pointer;
+                position: relative;
                 .check, .prix {
                 transition: transform 0.5s ease-in-out;
                 }
                 &:hover .check  {
                     visibility: visible;
-                    transform : translateX(-40px);
+                    transform : translateX(-100%);
                 }
                 &:hover .prix {
                     transform : translateX(-40px);
+                }
+                &:hover .overfl {
+                    text-overflow: ellipsis; 
                 }
                 .check {
                     position: absolute;
@@ -190,7 +194,7 @@ main {
 
                 .text-card {
                     overflow: hidden;
-                    text-overflow: ellipsis ;
+                    white-space: nowrap;
                     
                 h3 , p {
                     width: 287px;
@@ -202,7 +206,7 @@ main {
                     font-size: 18px;
                 }
                 .prix {
-                    width: 8%;            
+                    width: 8%;           
                 }
             }
         }
