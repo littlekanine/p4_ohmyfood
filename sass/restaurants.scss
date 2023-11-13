@@ -38,6 +38,7 @@ $mobile-width : 768px;
 
 body {
     width: 100%;
+    overflow: hidden;
     @include desktop{
         width: 100%;
     }
@@ -156,20 +157,24 @@ main {
                 height: 69px;
                 margin-bottom: 12px;
                 cursor: pointer;
-                &:active .check {
-                    transform: translateX(-40px);
-                    opacity: 1;
+                &:hover .check  {
+                    visibility: visible;
+                    transition: transform 0.5s ;
+                    transform : translateX(-40px);
                 }
+                    &:hover .prix {
+                        transform : translateX(-40px);
+                        transition: transform 0.5s  ;
+                    }
                 .check {
                     position: absolute;
-                    opacity: 0;
+                    visibility: hidden;
                     left: 349px;
                     width: 50px;
                     height: 69px;
                     border-radius: 0 20px 20px 0;
                     background-color: #99E2D0;
                     margin-right: 10px;
-                    transition: transform 1000ms;
                     i {
                         display: inline-flex;
                         width: 100%;
@@ -180,26 +185,21 @@ main {
                         color: #F6F6F6;
                     }
                 }
-            }
             
             h3 , p {
                 width: 287px;
                 padding-left: 10px ;
                 padding-top: 10px;
+                font-size: 15.04px;
             }
             h3 {
                 font-size: 18px;
             }
-
-            p {
-                font-size: 15.04px;
-            }
             .prix {
-                width: 8%;
-                transition: transform 400ms;
-            }
+                width: 8%;            }
         }
     }
+}
     .first-button {
         margin-bottom: 40px;
         border-radius: 40px;

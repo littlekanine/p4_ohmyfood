@@ -4,6 +4,7 @@
 
 body {
   width: 100%;
+  overflow: hidden;
 }
 @media (min-width: 1440px) {
   body {
@@ -121,20 +122,24 @@ main .menu .section .card-restaurant {
   margin-bottom: 12px;
   cursor: pointer;
 }
-main .menu .section .card-restaurant:active .check {
+main .menu .section .card-restaurant:hover .check {
+  visibility: visible;
+  transition: transform 0.5s;
   transform: translateX(-40px);
-  opacity: 1;
+}
+main .menu .section .card-restaurant:hover .prix {
+  transform: translateX(-40px);
+  transition: transform 0.5s;
 }
 main .menu .section .card-restaurant .check {
   position: absolute;
-  opacity: 0;
+  visibility: hidden;
   left: 349px;
   width: 50px;
   height: 69px;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
   margin-right: 10px;
-  transition: transform 1000ms;
 }
 main .menu .section .card-restaurant .check i {
   display: inline-flex;
@@ -145,20 +150,17 @@ main .menu .section .card-restaurant .check i {
   align-items: center;
   color: #F6F6F6;
 }
-main .menu .section h3, main .menu .section p {
+main .menu .section .card-restaurant h3, main .menu .section .card-restaurant p {
   width: 287px;
   padding-left: 10px;
   padding-top: 10px;
-}
-main .menu .section h3 {
-  font-size: 18px;
-}
-main .menu .section p {
   font-size: 15.04px;
 }
-main .menu .section .prix {
+main .menu .section .card-restaurant h3 {
+  font-size: 18px;
+}
+main .menu .section .card-restaurant .prix {
   width: 8%;
-  transition: transform 400ms;
 }
 main .first-button {
   margin-bottom: 40px;
