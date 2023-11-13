@@ -38,7 +38,7 @@ $mobile-width : 768px;
 
 body {
     width: 100%;
-    overflow: hidden;
+    // overflow-y: scroll;
     @include desktop{
         width: 100%;
     }
