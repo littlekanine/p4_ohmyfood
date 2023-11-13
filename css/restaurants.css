@@ -120,16 +120,18 @@ main .menu .section .card-restaurant {
   width: 349px;
   height: 69px;
   margin-bottom: 12px;
+  overflow: hidden;
   cursor: pointer;
+}
+main .menu .section .card-restaurant .check, main .menu .section .card-restaurant .prix {
+  transition: transform 0.5s ease-in-out;
 }
 main .menu .section .card-restaurant:hover .check {
   visibility: visible;
-  transition: transform 0.5s;
   transform: translateX(-40px);
 }
 main .menu .section .card-restaurant:hover .prix {
   transform: translateX(-40px);
-  transition: transform 0.5s;
 }
 main .menu .section .card-restaurant .check {
   position: absolute;
@@ -150,16 +152,20 @@ main .menu .section .card-restaurant .check i {
   align-items: center;
   color: #F6F6F6;
 }
-main .menu .section .card-restaurant h3, main .menu .section .card-restaurant p {
+main .menu .section .card-restaurant .text-card {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .menu .section .card-restaurant .text-card h3, main .menu .section .card-restaurant .text-card p {
   width: 287px;
   padding-left: 10px;
   padding-top: 10px;
   font-size: 15.04px;
 }
-main .menu .section .card-restaurant h3 {
+main .menu .section .card-restaurant .text-card h3 {
   font-size: 18px;
 }
-main .menu .section .card-restaurant .prix {
+main .menu .section .card-restaurant .text-card .prix {
   width: 8%;
 }
 main .first-button {

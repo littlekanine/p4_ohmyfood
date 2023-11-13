@@ -156,16 +156,18 @@ main {
                 width: 349px;
                 height: 69px;
                 margin-bottom: 12px;
+                overflow: hidden;
                 cursor: pointer;
+                .check, .prix {
+                transition: transform 0.5s ease-in-out;
+                }
                 &:hover .check  {
                     visibility: visible;
-                    transition: transform 0.5s ;
                     transform : translateX(-40px);
                 }
-                    &:hover .prix {
-                        transform : translateX(-40px);
-                        transition: transform 0.5s  ;
-                    }
+                &:hover .prix {
+                    transform : translateX(-40px);
+                }
                 .check {
                     position: absolute;
                     visibility: hidden;
@@ -185,18 +187,24 @@ main {
                         color: #F6F6F6;
                     }
                 }
-            
-            h3 , p {
-                width: 287px;
-                padding-left: 10px ;
-                padding-top: 10px;
-                font-size: 15.04px;
+
+                .text-card {
+                    overflow: hidden;
+                    text-overflow: ellipsis ;
+                    
+                h3 , p {
+                    width: 287px;
+                    padding-left: 10px ;
+                    padding-top: 10px;
+                    font-size: 15.04px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+                .prix {
+                    width: 8%;            
+                }
             }
-            h3 {
-                font-size: 18px;
-            }
-            .prix {
-                width: 8%;            }
         }
     }
 }
