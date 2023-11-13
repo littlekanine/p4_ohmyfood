@@ -40,7 +40,7 @@ $mobile-width : 768px;
 body {
     width: 100% ;
     @include desktop {
-        width:1440px;
+        width: 100%;
     }
 }
 header {

@@ -3,7 +3,7 @@ body {
 }
 @media (min-width: 1440px) {
   body {
-    width: 1440px;
+    width: 100%;
   }
 }
 
