@@ -176,14 +176,10 @@ main .menu .section .card-restaurant .text-card .prix {
   position: absolute;
   right: 15px;
 }
-main .menu .section .card-restaurant .text-card .ellipse-container {
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-}
 main .menu .section .card-restaurant .text-card .ellipse {
   text-overflow: ellipsis;
   display: inline-block;
+  transition: transform;
 }
 
 .first-button {
