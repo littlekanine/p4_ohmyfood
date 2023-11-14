@@ -32,6 +32,18 @@ $mobile-width : 768px;
     } 
 }
 
+@mixin expand-animation {
+    animation: expand 2s ease-in-out;
+    animation-fill-mode: forwards;
+    display: inline-block;
+}
+
+@keyframes expandAnimation {
+    to {
+      width: 50px;
+    }
+  }
+
 * {
     margin: 0;
 }
@@ -104,14 +116,12 @@ main {
                     top: 0;
                     left: 0;
                     font-family: "Font Awesome 6 Free";
-                    font-weight: 300;
-                    
+                    font-weight: 300;    
                 }
 
                 .icon[aria-checked]::before {
                     opacity: 0;
                 }
-                
                 .icon::after {
                     position: absolute;
                     top: 0;
@@ -130,83 +140,94 @@ main {
                 .icon[aria-checked]::after {
                     opacity: 1;
                 }
-                
                 .icon[aria-checked]:hover::after {
                     content: "\f7a9";
                     filter: contrast(0.7);
+                }
             }
-        }
-        .titre {
-            margin-left: 15px;
-            text-transform:uppercase;
-            border-bottom: 4px solid #99E2D0;
-            width: 40px;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-weight: 300;
-        }
-        .section {
-            margin-left: 10px;
-            margin-bottom: 30px;
-            .card-restaurant {
-                background-color: $white;
-                border-radius: 20px;
-                @include box-shadow;
-                width: 349px;
-                height: 69px;
-                margin-bottom: 12px;
-                overflow: hidden;
-                cursor: pointer;
-                position: relative;
-                .check, .prix {
-                transition: transform 0.5s ease-in-out;
-                }
-                &:hover .check  {
-                    visibility: visible;
-                    transform : translateX(-100%);
-                }
-                &:hover .prix {
-                    transform : translateX(-40px);
-                }
-                &:hover .overfl {
-                    text-overflow: ellipsis; 
-                }
-                .check {
-                    position: absolute;
-                    visibility: hidden;
-                    left: 349px;
-                    width: 50px;
+            .titre {
+                margin-left: 15px;
+                text-transform:uppercase;
+                border-bottom: 4px solid #99E2D0;
+                width: 40px;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 300;
+            }
+            .section {
+                margin-left: 10px;
+                margin-bottom: 30px;
+                .card-restaurant {
+                    background-color: $white;
+                    border-radius: 20px;
+                    @include box-shadow;
+                    width: 349px;
                     height: 69px;
-                    border-radius: 0 20px 20px 0;
-                    background-color: #99E2D0;
-                    margin-right: 10px;
-                    i {
-                        display: inline-flex;
-                        width: 100%;
-                        font-size: 20px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: #F6F6F6;
-                    }
-                }
-
-                .text-card {
+                    margin-bottom: 12px;
                     overflow: hidden;
-                    white-space: nowrap;
-                    
-                h3 , p {
-                    width: 287px;
-                    padding-left: 10px ;
-                    padding-top: 10px;
-                    font-size: 15.04px;
-                }
-                h3 {
-                    font-size: 18px;
-                }
-                .prix {
-                    width: 8%;           
+                    cursor: pointer;
+                    position: relative;
+                    .check, .prix {
+                    transition: transform 0.5s ease-in-out;
+                    }
+                    &:hover .check  {
+                        visibility: visible;
+                        transform : translateX(-100%);
+                    }
+                    &:hover .prix {
+                        transform : translateX(-40px);
+                    }
+                    &:hover .ellipse {
+                        text-overflow: ellipsis;
+                    }
+                    .check {
+                        position: absolute;
+                        visibility: hidden;
+                        left: 100%;
+                        width: 50px;
+                        height: 69px;
+                        border-radius: 0 20px 20px 0;
+                        background-color: #99E2D0;
+                        margin-right: 10px;
+                        margin-left: 1px;
+                        i {
+                            display: inline-flex;
+                            width: 100%;
+                            font-size: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #F6F6F6;
+                        }
+                    }
+                    .text-card {
+                    h3 , p {
+                        // width: 287px;
+                        padding-left: 10px ;
+                        padding-top: 10px;
+                        font-size: 15.04px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    h3 {
+                        font-size: 18px;
+                    }
+                    .prix {
+                        // width: 8%;
+                        position: absolute;
+                        right: 15px; 
+                    }
+                    .ellipse-container {
+                        position: relative;
+                        overflow: hidden;
+                        white-space: nowrap;
+                      }
+                    .ellipse {
+                        text-overflow: ellipsis;
+                        display: inline-block;
+                    }
                 }
             }
         }
@@ -234,7 +255,6 @@ main {
            transform: scale(1.01);
         }
     }
-}
 
 .back-foot {
     background-color: #353535 ;

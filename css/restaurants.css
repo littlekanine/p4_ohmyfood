@@ -1,3 +1,8 @@
+@keyframes expandAnimation {
+  to {
+    width: 50px;
+  }
+}
 * {
   margin: 0;
 }
@@ -133,18 +138,19 @@ main .menu .section .card-restaurant:hover .check {
 main .menu .section .card-restaurant:hover .prix {
   transform: translateX(-40px);
 }
-main .menu .section .card-restaurant:hover .overfl {
+main .menu .section .card-restaurant:hover .ellipse {
   text-overflow: ellipsis;
 }
 main .menu .section .card-restaurant .check {
   position: absolute;
   visibility: hidden;
-  left: 349px;
+  left: 100%;
   width: 50px;
   height: 69px;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
   margin-right: 10px;
+  margin-left: 1px;
 }
 main .menu .section .card-restaurant .check i {
   display: inline-flex;
@@ -155,23 +161,32 @@ main .menu .section .card-restaurant .check i {
   align-items: center;
   color: #F6F6F6;
 }
-main .menu .section .card-restaurant .text-card {
-  overflow: hidden;
-  white-space: nowrap;
-}
 main .menu .section .card-restaurant .text-card h3, main .menu .section .card-restaurant .text-card p {
-  width: 287px;
   padding-left: 10px;
   padding-top: 10px;
   font-size: 15.04px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 main .menu .section .card-restaurant .text-card h3 {
   font-size: 18px;
 }
 main .menu .section .card-restaurant .text-card .prix {
-  width: 8%;
+  position: absolute;
+  right: 15px;
 }
-main .first-button {
+main .menu .section .card-restaurant .text-card .ellipse-container {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+main .menu .section .card-restaurant .text-card .ellipse {
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.first-button {
   margin-bottom: 40px;
   border-radius: 40px;
   width: 218px;
@@ -184,11 +199,11 @@ main .first-button {
   font-weight: 400;
   transition: transform 0.7s ease, filter 0.7s ease, box-shadow 0.7s ease;
 }
-main .first-button a {
+.first-button a {
   color: #FFFFFF;
   text-decoration: none;
 }
-main .first-button:hover {
+.first-button:hover {
   filter: brightness(1.13);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
   transform: scale(1.01);
