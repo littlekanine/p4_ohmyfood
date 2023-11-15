@@ -15,21 +15,20 @@ body {
     width: 100%;
   }
 }
-
-header {
+body header {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 @media (min-width: 1440px) {
-  header {
+  body header {
     width: 1440px;
   }
 }
-header nav .header {
+body header nav .header {
   width: 100%;
 }
-header nav .header i {
+body header nav .header i {
   position: relative;
   top: 5px;
   right: 70px;
@@ -38,30 +37,32 @@ header nav .header i {
   text-decoration: none;
   color: #353535;
 }
-header nav .header img {
+body header nav .header img {
   width: 162px;
 }
-
-main img {
+body main {
+  background-color: #F6F6F6;
+}
+body main img {
   width: 100%;
   height: 275px;
   object-fit: cover;
 }
-main .menu {
+body main .menu {
   background-color: #F6F6F6;
   padding-top: 20px;
   border-radius: 20px 20px 0px 0px;
   position: relative;
   bottom: 30px;
 }
-main .menu .nav_menu {
+body main .menu .nav_menu {
   margin-left: 15px;
 }
-main .menu .nav_menu h2 {
+body main .menu .nav_menu h2 {
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
 }
-main .menu .nav_menu .icon {
+body main .menu .nav_menu .icon {
   font-size: 21px;
   position: relative;
   bottom: 20px;
@@ -70,7 +71,7 @@ main .menu .nav_menu .icon {
   height: 21px;
   transition: color 0.8s ease;
 }
-main .menu .nav_menu .icon::before {
+body main .menu .nav_menu .icon::before {
   position: absolute;
   transform: translate(-50%, -50%);
   font-size: inherit;
@@ -79,10 +80,10 @@ main .menu .nav_menu .icon::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 300;
 }
-main .menu .nav_menu .icon[aria-checked]::before {
+body main .menu .nav_menu .icon[aria-checked]::before {
   opacity: 0;
 }
-main .menu .nav_menu .icon::after {
+body main .menu .nav_menu .icon::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -95,15 +96,15 @@ main .menu .nav_menu .icon::after {
   opacity: 0;
   transition: 300ms opacity;
 }
-main .menu .nav_menu .icon:hover::after,
-main .menu .nav_menu .icon[aria-checked]::after {
+body main .menu .nav_menu .icon:hover::after,
+body main .menu .nav_menu .icon[aria-checked]::after {
   opacity: 1;
 }
-main .menu .nav_menu .icon[aria-checked]:hover::after {
+body main .menu .nav_menu .icon[aria-checked]:hover::after {
   content: "\f7a9";
   filter: contrast(0.7);
 }
-main .menu .titre {
+body main .menu .titre {
   margin-left: 15px;
   text-transform: uppercase;
   border-bottom: 4px solid #99E2D0;
@@ -113,11 +114,11 @@ main .menu .titre {
   font-size: 16px;
   font-weight: 300;
 }
-main .menu .section {
+body main .menu .section {
   margin-left: 10px;
   margin-bottom: 30px;
 }
-main .menu .section .card-restaurant {
+body main .menu .section .card-restaurant {
   background-color: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -128,21 +129,21 @@ main .menu .section .card-restaurant {
   cursor: pointer;
   position: relative;
 }
-main .menu .section .card-restaurant .check, main .menu .section .card-restaurant .prix {
+body main .menu .section .card-restaurant .check, body main .menu .section .card-restaurant .prix {
   transition: transform 0.5s ease-in-out;
 }
-main .menu .section .card-restaurant:hover .check {
+body main .menu .section .card-restaurant:hover .check {
   transform: translateX(-100%);
 }
-main .menu .section .card-restaurant:hover .prix {
+body main .menu .section .card-restaurant:hover .prix {
   transform: translateX(-49px);
 }
-main .menu .section .card-restaurant:hover p {
+body main .menu .section .card-restaurant:hover p {
   width: 235px;
   text-overflow: ellipsis;
   transition: transform 0.5s ease-in-out;
 }
-main .menu .section .card-restaurant .check {
+body main .menu .section .card-restaurant .check {
   position: absolute;
   left: 100%;
   width: 59px;
@@ -152,7 +153,7 @@ main .menu .section .card-restaurant .check {
   margin-right: 10px;
   margin-left: 1px;
 }
-main .menu .section .card-restaurant .check i {
+body main .menu .section .card-restaurant .check i {
   display: inline-flex;
   width: 100%;
   font-size: 20px;
@@ -161,21 +162,21 @@ main .menu .section .card-restaurant .check i {
   align-items: center;
   color: #F6F6F6;
 }
-main .menu .section .card-restaurant h3, main .menu .section .card-restaurant p {
+body main .menu .section .card-restaurant h3, body main .menu .section .card-restaurant p {
   padding-left: 10px;
   padding-top: 10px;
   font-size: 15.04px;
   overflow: hidden;
   white-space: nowrap;
 }
-main .menu .section .card-restaurant h3 {
+body main .menu .section .card-restaurant h3 {
   font-size: 18px;
 }
-main .menu .section .card-restaurant .prix {
+body main .menu .section .card-restaurant .prix {
   position: absolute;
   right: 15px;
 }
-main .menu .first-button {
+body main .first-button {
   margin-bottom: 40px;
   border-radius: 40px;
   width: 218px;
@@ -188,79 +189,85 @@ main .menu .first-button {
   font-weight: 400;
   transition: transform 0.7s ease, filter 0.7s ease, box-shadow 0.7s ease;
 }
-main .menu .first-button a {
+body main .first-button a {
   color: #FFFFFF;
   text-decoration: none;
 }
-main .menu .first-button:hover {
+body main .first-button:hover {
   filter: brightness(1.13);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
   transform: scale(1.01);
 }
-
-.back-foot {
+body .back-foot {
   background-color: #353535;
 }
 @media (min-width: 1440px) {
-  .back-foot {
+  body .back-foot {
     padding-top: 50px;
   }
 }
-.back-foot footer {
+body .back-foot footer {
   flex-direction: column;
 }
 @media (min-width: 1440px) {
-  .back-foot footer {
+  body .back-foot footer {
     flex-direction: row-reverse;
   }
 }
-.back-foot h3 {
+body .back-foot h3 {
   font-family: Shrikhand, sans-serif;
   width: 137.58px;
   height: 27px;
   color: #FFFFFF;
-  padding-left: 10px;
+  font-weight: 400;
+  padding-left: 30px;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 @media (min-width: 1440px) {
-  .back-foot h3 {
+  body .back-foot h3 {
     margin-left: 100px;
   }
 }
-.back-foot .foot-media {
+body .back-foot .foot-media {
+  padding-left: 20px;
   flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 @media (min-width: 1440px) {
-  .back-foot .foot-media {
+  body .back-foot .foot-media {
     flex-direction: row;
   }
 }
-.back-foot .foot-media .foot-media_1 {
+body .back-foot .foot-media .foot-media_1 {
   flex-direction: column;
   font-weight: 500;
+  gap: 10px;
 }
 @media (min-width: 1440px) {
-  .back-foot .foot-media .foot-media_1 {
+  body .back-foot .foot-media .foot-media_1 {
     flex-direction: row;
     padding-right: 60px;
   }
 }
-.back-foot .foot-media .foot-media_2 {
+body .back-foot .foot-media .foot-media_2 {
+  gap: 10px;
   flex-direction: column;
   font-weight: 400;
 }
 @media (min-width: 1440px) {
-  .back-foot .foot-media .foot-media_2 {
+  body .back-foot .foot-media .foot-media_2 {
     flex-direction: row;
   }
 }
-.back-foot .foot-media p {
+body .back-foot .foot-media p {
   color: #FFFFFF;
   padding-left: 10px;
 }
-.back-foot .foot-media p .fa-utensils {
+body .back-foot .foot-media p .fa-utensils {
   padding-right: 15px;
 }
-.back-foot .foot-media p .fa-handshake-angle {
+body .back-foot .foot-media p .fa-handshake-angle {
   padding-right: 10px;
 }
