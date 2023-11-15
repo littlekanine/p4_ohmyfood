@@ -6,57 +6,94 @@ body {
     width: 100%;
   }
 }
-
-header {
+body .loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  animation: hideLoader 2s ease-in-out forwards;
+}
+body .loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid rgb(147, 86, 220);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+body header {
   width: 100%;
 }
 @media (min-width: 1440px) {
-  header {
+  body header {
     width: 100%;
   }
 }
-header nav {
+body header nav {
   margin-top: 30px;
 }
-header nav .arrow {
+body header nav .arrow {
   color: #353535;
   size: 30px;
   position: relative;
   right: 70px;
 }
-header nav img {
+body header nav img {
   width: 162px;
   padding-bottom: 20px;
 }
-header nav .header {
+body header nav .header {
   height: 50px;
   background-color: #EAEAEA;
   box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.2);
 }
-header nav .header i {
+body header nav .header i {
   display: flex;
   padding-right: 17px;
 }
-
 @media (min-width: 1440px) {
-  main {
+  body main {
     width: 100%;
   }
 }
-main .reserv {
+body main .reserv {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #F6F6F6;
 }
-main .reserv .explorer {
+body main .reserv .explorer {
   font-size: 18px;
   font-weight: bold;
 }
-main .reserv .explorer p {
+body main .reserv .explorer p {
   padding-top: 20px;
   font-size: 18px;
 }
-main .reserv .explorer button {
+body main .reserv .explorer button {
   margin-top: 20px;
   border-radius: 40px;
   width: 218px;
@@ -69,29 +106,29 @@ main .reserv .explorer button {
   font-weight: 400;
   transition: transform 0.7s ease, filter 0.7s ease, box-shadow 0.7s ease;
 }
-main .reserv .explorer button a {
+body main .reserv .explorer button a {
   color: #FFFFFF;
   text-decoration: none;
 }
-main .reserv .explorer button:hover {
+body main .reserv .explorer button:hover {
   filter: brightness(1.13);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
   transform: scale(1.01);
 }
-main .fonctionnement {
+body main .fonctionnement {
   margin-top: 40px;
   margin-bottom: 30px;
 }
-main .fonctionnement h2 {
+body main .fonctionnement h2 {
   width: 50%;
   justify-content: center;
 }
 @media (min-width: 1440px) {
-  main .fonctionnement h2 {
+  body main .fonctionnement h2 {
     width: 40%;
   }
 }
-main .fonctionnement .rond {
+body main .fonctionnement .rond {
   width: 24px;
   height: 24px;
   background-color: #9356DC;
@@ -99,22 +136,22 @@ main .fonctionnement .rond {
   position: relative;
   right: 40px;
 }
-main .fonctionnement .rond p {
+body main .fonctionnement .rond p {
   color: #FFFFFF;
   position: relative;
   top: 2px;
 }
-main .fonctionnement .fonc-button {
+body main .fonctionnement .fonc-button {
   background: transparent;
   padding-top: 30px;
 }
 @media (min-width: 1440px) {
-  main .fonctionnement .fonc-button {
+  body main .fonctionnement .fonc-button {
     flex-direction: row;
     gap: 25px;
   }
 }
-main .fonctionnement .fonc-button button {
+body main .fonctionnement .fonc-button button {
   font-size: 16px;
   font-weight: 500;
   border-radius: 20px;
@@ -124,30 +161,30 @@ main .fonctionnement .fonc-button button {
   width: 322.49px;
   height: 72.38px;
 }
-main .fonctionnement .fonc-button button i {
+body main .fonctionnement .fonc-button button i {
   padding-right: 20px;
 }
-main .fonctionnement .fonc-button button h3 {
+body main .fonctionnement .fonc-button button h3 {
   width: 211px;
   height: 15.67px;
   font-weight: 600;
 }
-main .restaurant {
+body main .restaurant {
   background-color: #F6F6F6;
   padding-top: 20px;
 }
 @media (min-width: 1440px) {
-  main .restaurant .card-tablette {
+  body main .restaurant .card-tablette {
     display: flex;
     flex-direction: row;
     gap: 80px;
     padding-bottom: 20px;
   }
 }
-main .restaurant h2 {
+body main .restaurant h2 {
   margin-bottom: 20px;
 }
-main .restaurant section .rectangle {
+body main .restaurant section .rectangle {
   position: relative;
   bottom: 260px;
   left: 250px;
@@ -158,19 +195,19 @@ main .restaurant section .rectangle {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 1440px) {
-  main .restaurant section .rectangle {
+  body main .restaurant section .rectangle {
     position: relative;
     bottom: 260px;
     left: 400px;
   }
 }
-main .restaurant section .rectangle p {
+body main .restaurant section .rectangle p {
   color: #008766;
   size: 16px;
   width: 61.37px;
   padding-top: 10px;
 }
-main .restaurant section .icon {
+body main .restaurant section .icon {
   font-size: 21px;
   border: 1px;
   height: 21px;
@@ -180,12 +217,12 @@ main .restaurant section .icon {
   transition: color 0.8s ease;
 }
 @media (min-width: 1440px) {
-  main .restaurant section .icon {
+  body main .restaurant section .icon {
     position: relative;
     left: 450px;
   }
 }
-main .restaurant section .icon::before {
+body main .restaurant section .icon::before {
   position: absolute;
   transform: translate(-50%, -50%);
   font-size: inherit;
@@ -194,10 +231,10 @@ main .restaurant section .icon::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 300;
 }
-main .restaurant section .icon[aria-checked]::before {
+body main .restaurant section .icon[aria-checked]::before {
   opacity: 0;
 }
-main .restaurant section .icon::after {
+body main .restaurant section .icon::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -210,19 +247,19 @@ main .restaurant section .icon::after {
   opacity: 0;
   transition: 300ms opacity;
 }
-main .restaurant section .icon:hover::after,
-main .restaurant section .icon[aria-checked]::after {
+body main .restaurant section .icon:hover::after,
+body main .restaurant section .icon[aria-checked]::after {
   opacity: 1;
 }
-main .restaurant section .icon[aria-checked]:hover::after {
+body main .restaurant section .icon[aria-checked]:hover::after {
   content: "\f7a9";
   filter: contrast(0.7);
 }
-main .restaurant section a {
+body main .restaurant section a {
   color: black;
   text-decoration: none;
 }
-main .restaurant section .card-restaurant {
+body main .restaurant section .card-restaurant {
   background-color: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -231,11 +268,11 @@ main .restaurant section .card-restaurant {
   margin-bottom: 20px;
 }
 @media (min-width: 1440px) {
-  main .restaurant section .card-restaurant {
+  body main .restaurant section .card-restaurant {
     width: 498.65px;
   }
 }
-main .restaurant section .card-restaurant img {
+body main .restaurant section .card-restaurant img {
   width: 346px;
   height: 190px;
   object-fit: cover;
@@ -243,32 +280,31 @@ main .restaurant section .card-restaurant img {
   margin-bottom: 10px;
 }
 @media (min-width: 1440px) {
-  main .restaurant section .card-restaurant img {
+  body main .restaurant section .card-restaurant img {
     width: 498.65px;
   }
 }
-main .restaurant section .card-restaurant h3, main .restaurant section .card-restaurant p {
+body main .restaurant section .card-restaurant h3, body main .restaurant section .card-restaurant p {
   margin-left: 10px;
   padding-bottom: 10px;
 }
-
-.back-foot {
+body .back-foot {
   background-color: #353535;
 }
 @media (min-width: 1440px) {
-  .back-foot {
+  body .back-foot {
     padding-top: 50px;
   }
 }
-.back-foot footer {
+body .back-foot footer {
   flex-direction: column;
 }
 @media (min-width: 1440px) {
-  .back-foot footer {
+  body .back-foot footer {
     flex-direction: row-reverse;
   }
 }
-.back-foot h3 {
+body .back-foot h3 {
   font-family: Shrikhand, sans-serif;
   width: 137.58px;
   height: 27px;
@@ -277,44 +313,44 @@ main .restaurant section .card-restaurant h3, main .restaurant section .card-res
   margin-bottom: 20px;
 }
 @media (min-width: 1440px) {
-  .back-foot h3 {
+  body .back-foot h3 {
     margin-left: 100px;
   }
 }
-.back-foot .foot-media {
+body .back-foot .foot-media {
   flex-direction: column;
 }
 @media (min-width: 1440px) {
-  .back-foot .foot-media {
+  body .back-foot .foot-media {
     flex-direction: row;
   }
 }
-.back-foot .foot-media .foot-media_1 {
+body .back-foot .foot-media .foot-media_1 {
   flex-direction: column;
   font-weight: 500;
 }
 @media (min-width: 1440px) {
-  .back-foot .foot-media .foot-media_1 {
+  body .back-foot .foot-media .foot-media_1 {
     flex-direction: row;
     padding-right: 60px;
   }
 }
-.back-foot .foot-media .foot-media_2 {
+body .back-foot .foot-media .foot-media_2 {
   flex-direction: column;
   font-weight: 400;
 }
 @media (min-width: 1440px) {
-  .back-foot .foot-media .foot-media_2 {
+  body .back-foot .foot-media .foot-media_2 {
     flex-direction: row;
   }
 }
-.back-foot .foot-media p {
+body .back-foot .foot-media p {
   color: #FFFFFF;
   padding-left: 10px;
 }
-.back-foot .foot-media p .fa-utensils {
+body .back-foot .foot-media p .fa-utensils {
   padding-right: 15px;
 }
-.back-foot .foot-media p .fa-handshake-angle {
+body .back-foot .foot-media p .fa-handshake-angle {
   padding-right: 10px;
 }
