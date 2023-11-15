@@ -121,8 +121,8 @@ main {
             .icon{
                 font-size: 21px;
                 position: relative;
-                bottom: 20px;
-                left: 330px;
+                top: 20px;
+                left: 30px;
                 border: 1px;
                 height: 21px;
                 transition: color 0.8s ease ;
@@ -264,7 +264,6 @@ main {
             }
         }
     .first-button {
-        margin-bottom: 40px;
         border-radius: 40px;
         width: 218px;
         height: 50px;

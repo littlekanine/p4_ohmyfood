@@ -94,8 +94,8 @@ body main .menu .nav_menu h2 {
 body main .menu .nav_menu .icon {
   font-size: 21px;
   position: relative;
-  bottom: 20px;
-  left: 330px;
+  top: 20px;
+  left: 30px;
   border: 1px;
   height: 21px;
   transition: color 0.8s ease;
@@ -244,7 +244,6 @@ body main .menu .section .card-restaurant .prix {
   right: 15px;
 }
 body main .first-button {
-  margin-bottom: 40px;
   border-radius: 40px;
   width: 218px;
   height: 50px;

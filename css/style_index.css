@@ -83,11 +83,12 @@ main .fonctionnement {
   margin-bottom: 30px;
 }
 main .fonctionnement h2 {
-  margin-left: 20px;
+  width: 50%;
+  justify-content: center;
 }
 @media (min-width: 1440px) {
   main .fonctionnement h2 {
-    margin-left: 230px;
+    width: 40%;
   }
 }
 main .fonctionnement .rond {
