@@ -37,11 +37,27 @@ body header nav .header i {
   text-decoration: none;
   color: #353535;
 }
+@media (min-width: 1440px) {
+  body header nav .header i {
+    right: 600px;
+  }
+}
 body header nav .header img {
   width: 162px;
 }
+@media (min-width: 1440px) {
+  body header nav .header img {
+    width: 200px;
+    padding-top: 0;
+  }
+}
 body main {
   background-color: #F6F6F6;
+}
+@media (min-width: 1440px) {
+  body main {
+    background-color: white;
+  }
 }
 body main img {
   width: 100%;
@@ -51,9 +67,16 @@ body main img {
 body main .menu {
   background-color: #F6F6F6;
   padding-top: 20px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
   position: relative;
-  bottom: 30px;
+  bottom: 40px;
+}
+@media (min-width: 1440px) {
+  body main .menu {
+    width: 73%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 body main .menu .nav_menu {
   margin-left: 15px;
@@ -61,6 +84,12 @@ body main .menu .nav_menu {
 body main .menu .nav_menu h2 {
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
+}
+@media (min-width: 1440px) {
+  body main .menu .nav_menu h2 {
+    justify-content: center;
+    align-items: center;
+  }
 }
 body main .menu .nav_menu .icon {
   font-size: 21px;
@@ -70,6 +99,11 @@ body main .menu .nav_menu .icon {
   border: 1px;
   height: 21px;
   transition: color 0.8s ease;
+}
+@media (min-width: 1440px) {
+  body main .menu .nav_menu .icon {
+    justify-content: center;
+  }
 }
 body main .menu .nav_menu .icon::before {
   position: absolute;
@@ -104,30 +138,53 @@ body main .menu .nav_menu .icon[aria-checked]:hover::after {
   content: "\f7a9";
   filter: contrast(0.7);
 }
-body main .menu .titre {
+body main .menu .titre-menu {
+  width: 60%;
+}
+body main .menu .titre-menu .titre {
   margin-left: 15px;
   text-transform: uppercase;
-  border-bottom: 4px solid #99E2D0;
-  width: 40px;
   padding-bottom: 5px;
-  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 300;
+}
+@media (min-width: 1440px) {
+  body main .menu .titre-menu .titre {
+    justify-content: center;
+    align-items: center;
+  }
+}
+body main .menu .titre-menu .border-bottom {
+  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 body main .menu .section {
   margin-left: 10px;
   margin-bottom: 30px;
 }
+@media (min-width: 1440px) {
+  body main .menu .section {
+    align-items: center;
+    width: 60%;
+  }
+}
 body main .menu .section .card-restaurant {
   background-color: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  width: 349px;
+  width: 95%;
   height: 69px;
   margin-bottom: 12px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
+}
+@media (min-width: 1440px) {
+  body main .menu .section .card-restaurant {
+    width: 100%;
+  }
 }
 body main .menu .section .card-restaurant .check, body main .menu .section .card-restaurant .prix {
   transition: transform 0.5s ease-in-out;
@@ -142,6 +199,11 @@ body main .menu .section .card-restaurant:hover p {
   width: 235px;
   text-overflow: ellipsis;
   transition: transform 0.5s ease-in-out;
+}
+@media (min-width: 1440px) {
+  body main .menu .section .card-restaurant:hover p {
+    text-overflow: unset;
+  }
 }
 body main .menu .section .card-restaurant .check {
   position: absolute;
@@ -168,6 +230,11 @@ body main .menu .section .card-restaurant h3, body main .menu .section .card-res
   font-size: 15.04px;
   overflow: hidden;
   white-space: nowrap;
+}
+@media (min-width: 1440px) {
+  body main .menu .section .card-restaurant h3, body main .menu .section .card-restaurant p {
+    overflow: visible;
+  }
 }
 body main .menu .section .card-restaurant h3 {
   font-size: 18px;
@@ -227,6 +294,7 @@ body .back-foot h3 {
 @media (min-width: 1440px) {
   body .back-foot h3 {
     margin-left: 100px;
+    padding-top: 0;
   }
 }
 body .back-foot .foot-media {

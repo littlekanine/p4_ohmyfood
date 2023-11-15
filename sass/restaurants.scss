@@ -72,9 +72,16 @@ body {
                     height: 16px;
                     text-decoration: none;
                     color: #353535;
+                    @include desktop {
+                        right: 600px;
+                    }
                 }
                 img {
                     width: 162px;
+                    @include desktop {
+                        width: 200px;
+                        padding-top: 0;
+                    }
                 }
             }
         }
@@ -82,6 +89,9 @@ body {
 
 main {
     background-color: #F6F6F6;
+    @include desktop {
+        background-color: white;
+    }
     img {
         width: 100%;
         height: 275px;
@@ -90,14 +100,23 @@ main {
     .menu {
         background-color: #F6F6F6;
         padding-top:20px;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 30px 30px 0px 0px;
         position: relative;
-        bottom: 30px;
+        bottom: 40px;
+        @include desktop {
+            width: 73%;
+            justify-content: center;
+            align-items: center;
+        }
         .nav_menu {
             margin-left:15px ;
             h2 {
                 font-family: $second-font;
                 font-size: 28px;
+                @include desktop {
+                    justify-content: center;
+                    align-items: center;
+                }
             }
             .icon{
                 font-size: 21px;
@@ -107,6 +126,10 @@ main {
                 border: 1px;
                 height: 21px;
                 transition: color 0.8s ease ;
+                @include desktop {
+                    justify-content: center;
+                    // align-items: center;
+                }
             }
                 .icon::before {
                     position: absolute;
@@ -144,29 +167,46 @@ main {
                     filter: contrast(0.7);
                 }
             }
-            .titre {
-                margin-left: 15px;
-                text-transform:uppercase;
-                border-bottom: 4px solid #99E2D0;
-                width: 40px;
-                padding-bottom: 5px;
-                margin-bottom: 10px;
-                font-size: 16px;
-                font-weight: 300;
+            .titre-menu {
+                width: 60%;
+                .titre {
+                    margin-left: 15px;
+                    text-transform:uppercase;
+                    padding-bottom: 5px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    @include desktop {
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .border-bottom {
+                    border-bottom: 4px solid #99E2D0;
+                    width: 40px;
+                    margin-left: 15px;
+                    margin-bottom: 15px;
+                }
             }
             .section {
                 margin-left: 10px;
                 margin-bottom: 30px;
+                @include desktop {
+                    align-items: center;
+                    width: 60%;
+                }
                 .card-restaurant {
                     background-color: $white;
                     border-radius: 20px;
                     @include box-shadow;
-                    width: 349px;
+                    width: 95%;
                     height: 69px;
                     margin-bottom: 12px;
                     overflow: hidden;
                     cursor: pointer;
                     position: relative;
+                    @include desktop {
+                        width: 100%;
+                    }
                     .check ,.prix {
                     transition: transform 0.5s ease-in-out;
                     }
@@ -180,6 +220,9 @@ main {
                         width: 235px;
                         text-overflow: ellipsis;
                         transition: transform 0.5s ease-in-out;
+                        @include desktop {
+                            text-overflow: unset;
+                        }
                     }
                     .check {
                         position: absolute;
@@ -206,6 +249,9 @@ main {
                         font-size: 15.04px;
                         overflow: hidden;
                         white-space: nowrap;
+                        @include desktop {
+                            overflow: visible;
+                        }
                     }
                     h3 {
                         font-size: 18px;
@@ -263,6 +309,7 @@ main {
                 padding-top: 20px;
                 @include desktop {
                     margin-left: 100px;
+                    padding-top: 0;
                 }
             }
             .foot-media {
