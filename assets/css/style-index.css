@@ -120,8 +120,7 @@ body main .fonctionnement {
   margin-bottom: 30px;
 }
 body main .fonctionnement h2 {
-  width: 50%;
-  justify-content: center;
+  width: 322px;
 }
 @media (min-width: 1440px) {
   body main .fonctionnement h2 {
