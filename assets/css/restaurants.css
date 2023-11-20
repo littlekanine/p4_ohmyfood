@@ -59,17 +59,30 @@ body main {
     background-color: white;
   }
 }
-body main img {
+body main .img-restaurant {
+  height: 200px;
+}
+@media (min-width: 1440px) {
+  body main .img-restaurant {
+    height: 320px;
+  }
+}
+body main .img-restaurant img {
   width: 100%;
-  height: 275px;
-  object-fit: cover;
+}
+@media (min-width: 1440px) {
+  body main .img-restaurant img {
+    width: 100%;
+    height: 383px;
+    object-fit: cover;
+  }
 }
 body main .menu {
   background-color: #F6F6F6;
   padding-top: 20px;
   border-radius: 30px 30px 0px 0px;
   position: relative;
-  bottom: 40px;
+  padding-bottom: 40px;
 }
 @media (min-width: 1440px) {
   body main .menu {
