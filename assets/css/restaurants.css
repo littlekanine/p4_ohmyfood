@@ -203,7 +203,7 @@ body main .menu .section .card-restaurant {
 }
 body main .menu .section .card-restaurant:hover i {
   opacity: 1;
-  width: 59px;
+  width: 65px;
   transition: all 0.5s;
 }
 body main .menu .section .card-restaurant i {
@@ -226,6 +226,8 @@ body main .menu .section .card-restaurant h3, body main .menu .section .card-res
   padding-top: 10px;
   font-size: 15.04px;
   padding-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 @media (min-width: 1440px) {
@@ -237,6 +239,7 @@ body main .menu .section .card-restaurant div {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 body main .menu .section .card-restaurant div h3 {
   font-size: 18px;
