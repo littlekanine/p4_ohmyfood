@@ -195,55 +195,56 @@ body main .menu .section .card-restaurant {
   width: 100%;
   height: 69px;
   margin-bottom: 12px;
-  cursor: pointer;
-  position: relative;
 }
 @media (min-width: 1440px) {
   body main .menu .section .card-restaurant {
     width: 100%;
   }
 }
-body main .menu .section .card-restaurant .check, body main .menu .section .card-restaurant .prix {
-  transition: transform 0.5s ease-in-out;
+body main .menu .section .card-restaurant:hover i {
+  opacity: 1;
+  width: 59px;
+  transition: all 0.5s;
 }
-body main .menu .section .card-restaurant:hover .check {
-  transform: translateX(-100%);
-}
-@media (min-width: 1440px) {
-  body main .menu .section .card-restaurant:hover p {
-    text-overflow: unset;
-  }
-}
-body main .menu .section .card-restaurant .check {
+body main .menu .section .card-restaurant i {
   opacity: 0;
   width: 6px;
   height: 69px;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
-  margin-right: 10px;
-  margin-left: 1px;
-}
-body main .menu .section .card-restaurant .check i {
-  display: inline-flex;
-  width: 100%;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #F6F6F6;
+  font-size: 20px;
+  color: #F6F6F6;
 }
 body main .menu .section .card-restaurant h3, body main .menu .section .card-restaurant p {
+  display: inline-block;
+  width: 100%;
   padding-top: 10px;
   font-size: 15.04px;
-  white-space: nowrap;
-  transition: transform 0.5s ease-in-out;
+  padding-left: 10px;
+  text-overflow: ellipsis;
 }
-body main .menu .section .card-restaurant h3 {
+@media (min-width: 1440px) {
+  body main .menu .section .card-restaurant h3, body main .menu .section .card-restaurant p {
+    overflow: visible;
+  }
+}
+body main .menu .section .card-restaurant div {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body main .menu .section .card-restaurant div h3 {
   font-size: 18px;
 }
-body main .menu .section .card-restaurant .prix {
-  position: absolute;
-  right: 15px;
+body main .menu .section .card-restaurant div .prix {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 body main .first-button {
   border-radius: 40px;
