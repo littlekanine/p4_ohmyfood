@@ -10,7 +10,7 @@
 body {
   width: 100%;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body {
     width: 100%;
   }
@@ -20,7 +20,7 @@ body header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body header {
     width: 1440px;
   }
@@ -37,7 +37,7 @@ body header nav .header i {
   text-decoration: none;
   color: #353535;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body header nav .header i {
     right: 600px;
   }
@@ -45,7 +45,7 @@ body header nav .header i {
 body header nav .header img {
   width: 162px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body header nav .header img {
     width: 200px;
     padding-top: 0;
@@ -54,7 +54,7 @@ body header nav .header img {
 body main {
   background-color: #F6F6F6;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main {
     background-color: white;
   }
@@ -62,7 +62,7 @@ body main {
 body main .img-restaurant {
   height: 200px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .img-restaurant {
     height: 320px;
   }
@@ -70,7 +70,7 @@ body main .img-restaurant {
 body main .img-restaurant img {
   width: 100%;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .img-restaurant img {
     width: 100%;
     height: 383px;
@@ -84,7 +84,7 @@ body main .menu {
   position: relative;
   padding-bottom: 40px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .menu {
     width: 73%;
     justify-content: center;
@@ -98,7 +98,7 @@ body main .menu .nav_menu h2 {
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .menu .nav_menu h2 {
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ body main .menu .nav_menu .icon {
   height: 21px;
   transition: color 0.8s ease;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .menu .nav_menu .icon {
     justify-content: center;
   }
@@ -151,38 +151,45 @@ body main .menu .nav_menu .icon[aria-checked]:hover::after {
   content: "\f7a9";
   filter: contrast(0.7);
 }
+body main .menu .titre-restaurant {
+  margin-bottom: 10px;
+}
 body main .menu .titre-menu {
   width: 90%;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .menu .titre-menu {
     width: 60%;
   }
 }
 body main .menu .titre-menu .titre {
-  margin-left: 15px;
   text-transform: uppercase;
   padding-bottom: 5px;
   font-size: 16px;
   font-weight: 300;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .menu .titre-menu .titre {
     justify-content: center;
     align-items: center;
+    margin-left: 15px;
   }
 }
 body main .menu .titre-menu .border-bottom {
   border-bottom: 4px solid #99E2D0;
   width: 40px;
-  margin-left: 15px;
   margin-bottom: 15px;
+}
+@media (min-width: 1000px) {
+  body main .menu .titre-menu .border-bottom {
+    margin-left: 15px;
+  }
 }
 body main .menu .section {
   width: 95%;
   margin-bottom: 30px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .menu .section {
     align-items: center;
     width: 60%;
@@ -196,7 +203,7 @@ body main .menu .section .card-restaurant {
   height: 69px;
   margin-bottom: 12px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .menu .section .card-restaurant {
     width: 100%;
   }
@@ -230,7 +237,7 @@ body main .menu .section .card-restaurant h3, body main .menu .section .card-res
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .menu .section .card-restaurant h3, body main .menu .section .card-restaurant p {
     overflow: visible;
   }
@@ -273,7 +280,7 @@ body main .first-button:hover {
 body .back-foot {
   background-color: #353535;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot {
     padding-top: 50px;
   }
@@ -281,7 +288,7 @@ body .back-foot {
 body .back-foot footer {
   flex-direction: column;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot footer {
     flex-direction: row-reverse;
   }
@@ -296,7 +303,7 @@ body .back-foot h3 {
   margin-bottom: 20px;
   padding-top: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot h3 {
     margin-left: 100px;
     padding-top: 0;
@@ -308,7 +315,7 @@ body .back-foot .foot-media {
   gap: 10px;
   padding-bottom: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot .foot-media {
     flex-direction: row;
   }
@@ -318,7 +325,7 @@ body .back-foot .foot-media .foot-media_1 {
   font-weight: 500;
   gap: 10px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot .foot-media .foot-media_1 {
     flex-direction: row;
     padding-right: 60px;
@@ -329,7 +336,7 @@ body .back-foot .foot-media .foot-media_2 {
   flex-direction: column;
   font-weight: 400;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot .foot-media .foot-media_2 {
     flex-direction: row;
   }

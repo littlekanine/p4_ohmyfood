@@ -1,7 +1,7 @@
 body {
   width: 100%;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body {
     width: 100%;
   }
@@ -48,7 +48,7 @@ body .loader {
 body header {
   width: 100%;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body header {
     width: 100%;
   }
@@ -69,7 +69,7 @@ body header nav .header i {
   display: flex;
   padding-right: 17px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main {
     width: 100%;
   }
@@ -116,7 +116,7 @@ body main .fonctionnement {
 body main .fonctionnement h2 {
   width: 322px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .fonctionnement h2 {
     width: 1017.47px;
   }
@@ -138,7 +138,7 @@ body main .fonctionnement .fonc-button {
   background: transparent;
   padding-top: 30px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .fonctionnement .fonc-button {
     flex-direction: row;
     gap: 25px;
@@ -166,7 +166,7 @@ body main .restaurant {
   background-color: #F6F6F6;
   padding-top: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .restaurant .card-tablette {
     display: flex;
     flex-direction: row;
@@ -187,7 +187,7 @@ body main .restaurant section .rectangle {
   border-radius: 2px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .restaurant section .rectangle {
     position: relative;
     bottom: 260px;
@@ -208,7 +208,7 @@ body main .restaurant section .icon {
   bottom: 45px;
   transition: color 0.8s ease;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .restaurant section .icon {
     position: relative;
     left: 450px;
@@ -259,7 +259,7 @@ body main .restaurant section .card-restaurant {
   height: 271px;
   margin-bottom: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .restaurant section .card-restaurant {
     width: 498.65px;
   }
@@ -271,7 +271,7 @@ body main .restaurant section .card-restaurant img {
   border-radius: 20px 20px 0px 0px;
   margin-bottom: 10px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body main .restaurant section .card-restaurant img {
     width: 498.65px;
   }
@@ -283,7 +283,7 @@ body main .restaurant section .card-restaurant h3, body main .restaurant section
 body .back-foot {
   background-color: #353535;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot {
     padding-top: 50px;
   }
@@ -291,7 +291,7 @@ body .back-foot {
 body .back-foot footer {
   flex-direction: column;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot footer {
     flex-direction: row-reverse;
   }
@@ -304,7 +304,7 @@ body .back-foot h3 {
   padding-left: 10px;
   margin-bottom: 20px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot h3 {
     margin-left: 100px;
   }
@@ -312,7 +312,7 @@ body .back-foot h3 {
 body .back-foot .foot-media {
   flex-direction: column;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot .foot-media {
     flex-direction: row;
   }
@@ -321,7 +321,7 @@ body .back-foot .foot-media .foot-media_1 {
   flex-direction: column;
   font-weight: 500;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot .foot-media .foot-media_1 {
     flex-direction: row;
     padding-right: 60px;
@@ -331,7 +331,7 @@ body .back-foot .foot-media .foot-media_2 {
   flex-direction: column;
   font-weight: 400;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body .back-foot .foot-media .foot-media_2 {
     flex-direction: row;
   }
