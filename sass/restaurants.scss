@@ -42,6 +42,36 @@ body {
     @include desktop{
         width: 100%;
     }
+    .loader-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        animation: hideLoader 2s ease-in-out forwards;
+      }
+      .loader {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid  rgba(147,86,220,1);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes hideLoader {
+        0% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+      }
     header {
         width: 100%;
         padding-top: 20px;
@@ -98,7 +128,6 @@ main {
         background-color: #F6F6F6;
         padding-top:20px;
         border-radius: 30px 30px 0px 0px;
-        position: relative;
         padding-bottom: 40px;
         @include desktop {
             width: 73%;
@@ -269,10 +298,12 @@ main {
         @include box-shadow;
         font-weight: 400;
         transition: transform 0.7s ease, filter 0.7s ease, box-shadow 0.7s ease;
-        a {
-            color: $white;
-            text-decoration: none;
-        }
+        color: $white;
+        text-decoration: none;
+        // a {
+        //     color: $white;
+        //     text-decoration: none;
+        // }
         &:hover {
         filter:brightness(1.13);
         box-shadow:0px 2px 20px rgba(0, 0, 0, 0.2) ;
@@ -314,9 +345,6 @@ main {
                 @include desktop {
                     flex-direction: row;
                 }
-
-    // CHANGER LA TAILLE DU GRAS ?
-
             .foot-media_1 {
                 flex-direction: column;
                 font-weight: 500;

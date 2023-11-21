@@ -154,6 +154,7 @@ body {
                         color: $white;
                         position: relative;
                         top: 2px;
+                        left: 7px;
                     }
                 }
                 .fonc-button {
@@ -163,7 +164,7 @@ body {
                         flex-direction: row;
                         gap: 25px;
                     }
-                    button {
+                    .button {
                         font-size: 16px;
                         font-weight: 500;
                         border-radius: 20px;
@@ -310,60 +311,65 @@ body {
         @include desktop {
             padding-top: 50px;
         }
-        footer {
-            flex-direction: column;
-            @include desktop {
-                flex-direction: row-reverse;
-                }
-            }
-            h3 {
-                font-family: $second-font ;
-                width: 137.58px;
-                height: 27px;
-                color: $white;
-                padding-left: 10px;
-                margin-bottom: 20px;
-                @include desktop {
-                    margin-left: 100px;
-                }
-            }
-            .foot-media {
+            footer {
                 flex-direction: column;
                 @include desktop {
-                    flex-direction: row;
+                    flex-direction: row-reverse;
+                    }
                 }
-
-    // CHANGER LA TAILLE DU GRAS ?
-
-            .foot-media_1 {
-                flex-direction: column;
-                font-weight: 500;
-                @include desktop {
-                    flex-direction: row;
-                    padding-right: 60px;
-                }
-            }
-
-                .foot-media_2 {
-                    flex-direction: column;
+                h3 {
+                    font-family: $second-font ;
+                    width: 137.58px;
+                    height: 27px;
+                    color: $white;
                     font-weight: 400;
+                    padding-left: 30px;
+                    margin-bottom: 20px;
+                    padding-top: 20px;
+                    @include desktop {
+                        margin-left: 100px;
+                        padding-top: 0;
+                    }
+                }
+                .foot-media {
+                    padding-left: 20px;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding-bottom: 20px;
                     @include desktop {
                         flex-direction: row;
-                        }
                     }
-
-            p {
-                color: $white;
-                padding-left: 10px; 
-
-                .fa-utensils {
-                    padding-right: 15px;
+                .foot-media_1 {
+                    flex-direction: column;
+                    font-weight: 500;
+                    gap: 10px;
+                    @include desktop {
+                        flex-direction: row;
+                        padding-right: 60px;
+                    }
                 }
-
-                .fa-handshake-angle {
-                    padding-right: 10px;
+    
+                    .foot-media_2 {
+                        gap: 10px;
+                        flex-direction: column;
+                        font-weight: 400;
+                        @include desktop {
+                            flex-direction: row;
+                            }
+                        }
+    
+                p {
+                    color: $white;
+                    padding-left: 10px; 
+    
+                    .fa-utensils {
+                        padding-right: 15px;
+                    }
+    
+                    .fa-handshake-angle {
+                        padding-right: 10px;
+                    }
                 }
             }
         }
     }
-}

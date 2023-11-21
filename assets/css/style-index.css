@@ -133,6 +133,7 @@ body main .fonctionnement .rond p {
   color: #FFFFFF;
   position: relative;
   top: 2px;
+  left: 7px;
 }
 body main .fonctionnement .fonc-button {
   background: transparent;
@@ -144,7 +145,7 @@ body main .fonctionnement .fonc-button {
     gap: 25px;
   }
 }
-body main .fonctionnement .fonc-button button {
+body main .fonctionnement .fonc-button .button {
   font-size: 16px;
   font-weight: 500;
   border-radius: 20px;
@@ -154,10 +155,10 @@ body main .fonctionnement .fonc-button button {
   width: 322.49px;
   height: 72.38px;
 }
-body main .fonctionnement .fonc-button button i {
+body main .fonctionnement .fonc-button .button i {
   padding-right: 20px;
 }
-body main .fonctionnement .fonc-button button h3 {
+body main .fonctionnement .fonc-button .button h3 {
   width: 211px;
   height: 15.67px;
   font-weight: 600;
@@ -301,16 +302,22 @@ body .back-foot h3 {
   width: 137.58px;
   height: 27px;
   color: #FFFFFF;
-  padding-left: 10px;
+  font-weight: 400;
+  padding-left: 30px;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 @media (min-width: 1000px) {
   body .back-foot h3 {
     margin-left: 100px;
+    padding-top: 0;
   }
 }
 body .back-foot .foot-media {
+  padding-left: 20px;
   flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 @media (min-width: 1000px) {
   body .back-foot .foot-media {
@@ -320,6 +327,7 @@ body .back-foot .foot-media {
 body .back-foot .foot-media .foot-media_1 {
   flex-direction: column;
   font-weight: 500;
+  gap: 10px;
 }
 @media (min-width: 1000px) {
   body .back-foot .foot-media .foot-media_1 {
@@ -328,6 +336,7 @@ body .back-foot .foot-media .foot-media_1 {
   }
 }
 body .back-foot .foot-media .foot-media_2 {
+  gap: 10px;
   flex-direction: column;
   font-weight: 400;
 }
