@@ -5,7 +5,7 @@ $main-color : #9356DC;
 $white : #FFFFFF ; 
 $black: black ;
 $gradient : linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-$desktop-width : 1000px;
+$desktop-width : 800px;
 $tablette-width : 1024px;
 $mobile-width : 768px; 
 
@@ -266,9 +266,6 @@ main {
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                        @include desktop {
-                            overflow: visible;
-                        }
                     }
                     div {
                         width: 100%;
