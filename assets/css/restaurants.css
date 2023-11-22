@@ -246,11 +246,6 @@ body main .menu .section .card-restaurant {
     width: 100%;
   }
 }
-body main .menu .section .card-restaurant:hover i {
-  opacity: 1;
-  width: 65px;
-  transition: all 0.5s;
-}
 body main .menu .section .card-restaurant i {
   opacity: 0;
   width: 6px;
@@ -264,6 +259,11 @@ body main .menu .section .card-restaurant i {
   color: #F6F6F6;
   font-size: 20px;
   color: #F6F6F6;
+  transition: all 0.5s;
+}
+body main .menu .section .card-restaurant:hover i {
+  opacity: 1;
+  width: 65px;
 }
 body main .menu .section .card-restaurant h3, body main .menu .section .card-restaurant p {
   display: inline-block;

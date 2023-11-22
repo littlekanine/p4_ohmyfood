@@ -153,7 +153,6 @@ main {
                 transition: color 0.8s ease ;
                 @include desktop {
                     justify-content: center;
-                    // align-items: center;
                 }
             }
                 .icon::before {
@@ -237,11 +236,6 @@ main {
                     @include desktop {
                         width: 100%;
                     }
-                    &:hover i  {
-                        opacity: 1;
-                        width: 65px;
-                        transition: all 0.5s ;
-                    }
                     i {
                         opacity: 0;
                         width: 6px;
@@ -255,6 +249,11 @@ main {
                         color: #F6F6F6;
                         font-size: 20px;
                         color: #F6F6F6;
+                        transition: all 0.5s ;
+                    }
+                    &:hover i  {
+                        opacity: 1;
+                        width: 65px;
                     }
                     h3 , p {
                         display: inline-block;
