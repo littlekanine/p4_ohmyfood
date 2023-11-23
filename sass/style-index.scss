@@ -252,7 +252,9 @@ body {
                         font-family: "Font Awesome 6 Free";
                         font-weight: 900;
                         content: "\f004";
-                        color:$main-color;
+                        background: $gradient;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                         opacity: 0;
                         transition: 300ms opacity;
                     }

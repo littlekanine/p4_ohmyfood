@@ -94,7 +94,7 @@ body main {
   }
 }
 body main .img-restaurant {
-  height: 200px;
+  height: 220px;
 }
 @media (min-width: 1200px) {
   body main .img-restaurant {
@@ -172,7 +172,9 @@ body main .menu .nav_menu .icon::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f004";
-  color: #9356DC;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: 300ms opacity;
 }

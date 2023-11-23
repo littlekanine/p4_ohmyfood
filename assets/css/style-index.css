@@ -237,7 +237,9 @@ body main .restaurant section .icon::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f004";
-  color: #9356DC;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: 300ms opacity;
 }
