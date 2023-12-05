@@ -215,68 +215,96 @@ main {
             }
         }
     }
-    .section {
-        width: 95%;
-        margin-bottom: 30px;
-        @include desktop {
-            align-items: center;
-            width: 60%;
-        }
-        .card-restaurant {
-            background-color: $white;
-            border-radius: 20px;
-            @include box-shadow;
-            width: 100%;
-            height: 69px;
-            margin-bottom: 12px;
+
+.section {
+    width: 95%;
+    margin-bottom: 30px;
+    animation: opac 2s ease-in;
+    @keyframes opac {
+        0% {opacity: 0}
+        50% { opacity: 0}
+        75% { opacity: 0.5}
+        100% {opacity: 1}
+    } 
+    .card-restaurant {
+        background-color: $white;
+        border-radius: 20px;
+        @include box-shadow;
+        width: 100%;
+        height: 69px;
+        margin-bottom: 12px;
+        animation: appearance 1s ease-in;
             @include desktop {
-                width: 100%;
+            width: 100%;
             }
-            i {
-                opacity: 0;
-                width: 6px;
-                height: 69px;
-                border-radius: 0 20px 20px 0;
-                background-color: #99E2D0;
-                font-size: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #F6F6F6;
-                font-size: 20px;
-                color: #F6F6F6;
-                transition: all 0.5s ;
+        @keyframes appearance {
+        0% {transform: translateX(-300px)}
+        100% {
+            transform: translateX(0px);}
+        }
+        .card-restau-1, .card-restau-2, .card-restau-3 {
+        animation: appearance 0.75s ease-in;
+        }
+        &.card-restau-1 {
+        animation-delay: 0.5s;
+        }
+        &.card-restau-2 {
+        animation-delay: 0.75s;
+        }
+        &.card-restau-3 {
+        animation-delay: 1s;
+        }
+        @include desktop {
+        align-items: center;
+        width: 60%;
+        }
+
+        i {
+        opacity: 0;
+        width: 6px;
+        height: 69px;
+        border-radius: 0 20px 20px 0;
+        background-color: #99E2D0;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #F6F6F6;
+        transition: all 0.5s;
+        }
+
+        &:hover i {
+        opacity: 1;
+        width: 65px;
+        }
+
+        h3, p {
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        font-size: 15.04px;
+        padding-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        }
+        div {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+            h3 {
+                font-size: 18px;
             }
-            &:hover i  {
-                opacity: 1;
-                width: 65px;
-            }
-            h3 , p {
-                display: inline-block;
-                width: 100%;
-                padding-top: 10px;
-                font-size: 15.04px;
+
+            .prix {
+                margin-bottom: 10px;
                 padding-left: 10px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            div {
-                width: 100%;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                h3 {
-                    font-size: 18px;
-                }
-                .prix {
-                    margin-bottom: 10px;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
+                padding-right: 10px;
             }
         }
     }
+}
 
         .first-button {
             border-radius: 40px;

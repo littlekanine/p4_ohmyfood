@@ -5,7 +5,6 @@
 body {
   width: 100%;
 }
-
 @media (min-width: 1200px) {
   body {
     width: 100%;
@@ -247,11 +246,20 @@ body main .menu .titre-menu .border-bottom {
 body main .menu .section {
   width: 95%;
   margin-bottom: 30px;
+  animation: opac 2s ease-in;
 }
-@media (min-width: 1200px) {
-  body main .menu .section {
-    align-items: center;
-    width: 60%;
+@keyframes opac {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -262,10 +270,41 @@ body main .menu .section .card-restaurant {
   width: 100%;
   height: 69px;
   margin-bottom: 12px;
+  animation: appearance 1s ease-in;
 }
 @media (min-width: 1200px) {
   body main .menu .section .card-restaurant {
     width: 100%;
+  }
+}
+@keyframes appearance {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+body main .menu .section .card-restaurant .card-restau-1, body main .menu .section .card-restaurant .card-restau-2, body main .menu .section .card-restaurant .card-restau-3 {
+  animation: appearance 0.75s ease-in;
+}
+
+body main .menu .section .card-restaurant.card-restau-1 {
+  animation-delay: 0.5s;
+}
+
+body main .menu .section .card-restaurant.card-restau-2 {
+  animation-delay: 0.75s;
+}
+
+body main .menu .section .card-restaurant.card-restau-3 {
+  animation-delay: 1s;
+}
+@media (min-width: 1200px) {
+  body main .menu .section .card-restaurant {
+    align-items: center;
+    width: 60%;
   }
 }
 
@@ -279,8 +318,6 @@ body main .menu .section .card-restaurant i {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F6F6F6;
-  font-size: 20px;
   color: #F6F6F6;
   transition: all 0.5s;
 }
