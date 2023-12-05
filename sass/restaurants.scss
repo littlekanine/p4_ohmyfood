@@ -219,6 +219,8 @@ main {
 .section {
     width: 95%;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
     animation: opac 2s ease-in;
     @keyframes opac {
         0% {opacity: 0}
@@ -238,9 +240,9 @@ main {
             width: 100%;
             }
         @keyframes appearance {
-        0% {transform: translateX(-300px)}
+        0% {transform: translateX(-100%)}
         100% {
-            transform: translateX(0px);}
+            transform: translateX(0%);}
         }
         .card-restau-1, .card-restau-2, .card-restau-3 {
         animation: appearance 0.75s ease-in;

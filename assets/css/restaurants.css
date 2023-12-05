@@ -10,7 +10,6 @@ body {
     width: 100%;
   }
 }
-
 body .loader-overlay {
   position: fixed;
   top: 0;
@@ -25,7 +24,6 @@ body .loader-overlay {
   transition: opacity 1s ease-in-out;
   animation: hideLoader 2s ease-in-out forwards;
 }
-
 body .loader {
   border: 8px solid #f3f3f3;
   border-top: 8px solid #9356DC;
@@ -51,7 +49,6 @@ body .loader {
     visibility: hidden;
   }
 }
-
 body header {
   width: 100%;
   padding-top: 20px;
@@ -62,11 +59,9 @@ body header {
     width: 1440px;
   }
 }
-
 body header nav .header {
   width: 100%;
 }
-
 body header nav .header i {
   position: relative;
   top: 5px;
@@ -81,7 +76,6 @@ body header nav .header i {
     right: 600px;
   }
 }
-
 body header nav .header img {
   width: 162px;
 }
@@ -91,7 +85,6 @@ body header nav .header img {
     padding-top: 0;
   }
 }
-
 body main {
   background-color: #F6F6F6;
 }
@@ -100,7 +93,6 @@ body main {
     background-color: white;
   }
 }
-
 body main .img-restaurant {
   height: 220px;
 }
@@ -109,7 +101,6 @@ body main .img-restaurant {
     height: 320px;
   }
 }
-
 body main .img-restaurant img {
   width: 100%;
 }
@@ -120,7 +111,6 @@ body main .img-restaurant img {
     object-fit: cover;
   }
 }
-
 body main .menu {
   background-color: #F6F6F6;
   padding-top: 20px;
@@ -134,11 +124,9 @@ body main .menu {
     align-items: center;
   }
 }
-
 body main .menu .nav_menu {
   margin-left: 15px;
 }
-
 body main .menu .nav_menu h2 {
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
@@ -149,7 +137,6 @@ body main .menu .nav_menu h2 {
     align-items: center;
   }
 }
-
 body main .menu .nav_menu .icon {
   font-size: 21px;
   position: relative;
@@ -164,7 +151,6 @@ body main .menu .nav_menu .icon {
     justify-content: center;
   }
 }
-
 body main .menu .nav_menu .icon::before {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -174,11 +160,9 @@ body main .menu .nav_menu .icon::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 300;
 }
-
 body main .menu .nav_menu .icon[aria-checked]::before {
   opacity: 0;
 }
-
 body main .menu .nav_menu .icon::after {
   position: absolute;
   top: 0;
@@ -194,21 +178,17 @@ body main .menu .nav_menu .icon::after {
   opacity: 0;
   transition: 300ms opacity;
 }
-
 body main .menu .nav_menu .icon:hover::after,
 body main .menu .nav_menu .icon[aria-checked]::after {
   opacity: 1;
 }
-
 body main .menu .nav_menu .icon[aria-checked]:hover::after {
   content: "\f7a9";
   filter: contrast(0.7);
 }
-
 body main .menu .titre-restaurant {
   margin-bottom: 10px;
 }
-
 body main .menu .titre-menu {
   width: 90%;
 }
@@ -217,7 +197,6 @@ body main .menu .titre-menu {
     width: 60%;
   }
 }
-
 body main .menu .titre-menu .titre {
   text-transform: uppercase;
   padding-bottom: 5px;
@@ -231,7 +210,6 @@ body main .menu .titre-menu .titre {
     margin-left: 15px;
   }
 }
-
 body main .menu .titre-menu .border-bottom {
   border-bottom: 4px solid #99E2D0;
   width: 40px;
@@ -242,10 +220,11 @@ body main .menu .titre-menu .border-bottom {
     margin-left: 15px;
   }
 }
-
 body main .menu .section {
   width: 95%;
   margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
   animation: opac 2s ease-in;
 }
 @keyframes opac {
@@ -262,7 +241,6 @@ body main .menu .section {
     opacity: 1;
   }
 }
-
 body main .menu .section .card-restaurant {
   background-color: #FFFFFF;
   border-radius: 20px;
@@ -279,25 +257,21 @@ body main .menu .section .card-restaurant {
 }
 @keyframes appearance {
   0% {
-    transform: translateX(-300px);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(0%);
   }
 }
-
 body main .menu .section .card-restaurant .card-restau-1, body main .menu .section .card-restaurant .card-restau-2, body main .menu .section .card-restaurant .card-restau-3 {
   animation: appearance 0.75s ease-in;
 }
-
 body main .menu .section .card-restaurant.card-restau-1 {
   animation-delay: 0.5s;
 }
-
 body main .menu .section .card-restaurant.card-restau-2 {
   animation-delay: 0.75s;
 }
-
 body main .menu .section .card-restaurant.card-restau-3 {
   animation-delay: 1s;
 }
@@ -307,7 +281,6 @@ body main .menu .section .card-restaurant.card-restau-3 {
     width: 60%;
   }
 }
-
 body main .menu .section .card-restaurant i {
   opacity: 0;
   width: 6px;
@@ -321,12 +294,10 @@ body main .menu .section .card-restaurant i {
   color: #F6F6F6;
   transition: all 0.5s;
 }
-
 body main .menu .section .card-restaurant:hover i {
   opacity: 1;
   width: 65px;
 }
-
 body main .menu .section .card-restaurant h3, body main .menu .section .card-restaurant p {
   display: inline-block;
   width: 100%;
@@ -337,24 +308,20 @@ body main .menu .section .card-restaurant h3, body main .menu .section .card-res
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
 body main .menu .section .card-restaurant div {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
 body main .menu .section .card-restaurant div h3 {
   font-size: 18px;
 }
-
 body main .menu .section .card-restaurant div .prix {
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-
 body main .menu .first-button {
   border-radius: 40px;
   width: 218px;
@@ -369,13 +336,11 @@ body main .menu .first-button {
   color: #FFFFFF;
   text-decoration: none;
 }
-
 body main .menu .first-button:hover {
   filter: brightness(1.13);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
   transform: scale(1.01);
 }
-
 body .back-foot {
   background-color: #353535;
 }
@@ -384,7 +349,6 @@ body .back-foot {
     padding-top: 50px;
   }
 }
-
 body .back-foot footer {
   flex-direction: column;
 }
@@ -393,7 +357,6 @@ body .back-foot footer {
     flex-direction: row-reverse;
   }
 }
-
 body .back-foot h3 {
   font-family: Shrikhand, sans-serif;
   width: 137.58px;
@@ -410,7 +373,6 @@ body .back-foot h3 {
     padding-top: 0;
   }
 }
-
 body .back-foot .foot-media {
   padding-left: 20px;
   flex-direction: column;
@@ -422,7 +384,6 @@ body .back-foot .foot-media {
     flex-direction: row;
   }
 }
-
 body .back-foot .foot-media .foot-media_1 {
   flex-direction: column;
   font-weight: 500;
@@ -434,7 +395,6 @@ body .back-foot .foot-media .foot-media_1 {
     padding-right: 60px;
   }
 }
-
 body .back-foot .foot-media .foot-media_2 {
   gap: 10px;
   flex-direction: column;
@@ -445,16 +405,13 @@ body .back-foot .foot-media .foot-media_2 {
     flex-direction: row;
   }
 }
-
 body .back-foot .foot-media p {
   color: #FFFFFF;
   padding-left: 10px;
 }
-
 body .back-foot .foot-media p .fa-utensils {
   padding-right: 15px;
 }
-
 body .back-foot .foot-media p .fa-handshake-angle {
   padding-right: 10px;
 }
